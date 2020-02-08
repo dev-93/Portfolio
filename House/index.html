@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>오늘의집</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS 불러오기 -->
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="index.css">
+	<!-- 제이쿼리 불러오기 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- owl 캐러셀 불러오기 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+	<!-- 폰트어썸 불러오기 -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+
+<body>
+	<div class="top-box con-min-width">
+		<div class="top-bar">
+			<div class="con row">
+				<a href="./index.html" class="logo block cell"></a>
+				<nav class="menu-1 cell">
+					<ul class="row">
+						<li class="cell selected active"><a href="./index.html" class="block">커뮤니티</a></li>
+						<li class="cell"><a href="./sub1.html" class="block">스토어</a></li>
+						<li class="cell"><a href="./sub2.html" class="block">전문가</a></li>
+					</ul>
+				</nav>
+				<nav class="btn-close cell">
+					<a href="#">
+						<div class="ico ico-etc-hamburger"></div>
+					</a>
+				</nav>
+				<div class="left-side-bar">
+					<div class="left-side-bar_header relative row">
+						<a href="#" class="top_logo absolute block cell"></a>
+						<div class="top_link cell-right relative row">
+							<a href="#" class="block cell-right">앱다운로드
+								<div class="top_home absolute cell"></div>
+							</a>
+						</div>
+					</div>
+					<div class="left-side-bar_user_log row">
+						<a href="#" class="log block cell">로그인</a>
+						<a href="#" class="join block cell-right">회원가입</a>
+					</div>
+					<div class="left-side-bar_primary_menu">
+						<ul class="left-side-bar_menu_1 row">
+							<li>
+								<a href="#" class="block">
+									<div class="title row relative">
+										<span class="icon com cell"></span>
+										<div class="cell active">커뮤니티</div>
+										<span class="open_button cell-right"><i class="fas fa-chevron-down"></i></span>
+									</div>
+								</a>
+								<ul class="row">
+									<li><a href="./index.html" class="block">홈</a></li>
+									<li><a href="#" class="block">사진</a></li>
+									<li><a href="#" class="block">집들이</a></li>
+									<li><a href="#" class="block">노하우</a></li>
+									<li><a href="#" class="block">전문가집들이</a></li>
+									<li><a href="#" class="block"></a>셀프가이드</li>
+									<li><a href="#" class="block">질문과답변</a> </li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									<div class="title row relative">
+										<span class="icon str cell"></span>
+										<div class="cell">스토어</div>
+										<span class="open_button cell-right"><i class="fas fa-chevron-down"></i></span>
+									</div>
+								</a>
+								<ul class="row">
+									<li><a href="sub1.html" class="block">스토어홈</a></li>
+									<li><a href="#" class="block">신혼가구</a></li>
+									<li><a href="#" class="block">랭킹</a></li>
+									<li><a href="#" class="block">SALE</a></li>
+									<li><a href="#" class="block">매일꿀템</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									<div class="title row relative">
+										<span class="icon exp cell"></span>
+										<div class="cell">전문가</div>
+										<span class="open_button cell-right"><i class="fas fa-chevron-down"></i></span>
+									</div>
+								</a>
+								<ul class="row">
+									<li><a href="./sub2.html" class="block">전문가홈</a></li>
+									<li><a href="#" class="block">견적계산</a></li>
+									<li><a href="#" class="block">전문가찾기</a></li>
+									<li><a href="#" class="block">방산시장</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="left-side-bar_bottom_menu">
+						<ul class="menu_1">
+							<li><a href="#" class="block">마이홈</a></li>
+							<li><a href="#" class="block">나의 쇼핑</a></li>
+							<li><a href="#" class="block">알림</a></li>
+							<li><a href="#" class="block">이벤트</a></li>
+							<li><a href="#" class="block">사진 올리기</a></li>
+							<li><a href="#" class="block">질문하기</a></li>
+						</ul>
+						<ul class="menu_2">
+							<li><a href="#" class="block">판매자 신청</a></li>
+						</ul>
+					</div>
+					<div class="left-side-bar_user_bottom"></div>
+				</div>
+				<div class="left-side-bar-bg"></div>
+				<nav class="menu-2 cell-right">
+					<ul class="row">
+						<li class="cell"><a href="#" class="block">로그인</a></li>
+						<li class="cell"><a href="#" class="block">회원가입</a></li>
+					</ul>
+				</nav>
+				<div class="btn-cart cell-right">
+					<div class="ico ico-cart"></div>
+				</div>
+				<div class="btn-write cell-right">
+					글쓰기
+				</div>
+				<div class="btn-search cell-right">
+					<div class="ico ico-search"></div>
+				</div>
+				<form class="search-box cell-right relative block">
+					<div class="ico ico-search absolute-left absolute-middle"></div>
+					<input type="text" class="block" placeholder="검색">
+					<nav class="search-option-menu">
+						<ul>
+							<li class="row">
+								<div class="ico ico-1 cell"></div><span class="cell">사진 검색</span>
+							</li>
+							<li class="row">
+								<div class="ico ico-2 cell"></div><span class="cell">집들이 검색</span>
+							</li>
+							<li class="row">
+								<div class="ico ico-3 cell"></div><span class="cell">노하우 검색</span>
+							</li>
+							<li class="row">
+								<div class="ico ico-4 cell"></div><span class="cell">가구소품 검색</span>
+							</li>
+							<li class="row">
+								<div class="ico ico-5 cell"></div><span class="cell">스토어 검색</span>
+							</li>
+							<li class="row">
+								<div class="ico ico-6 cell"></div><span class="cell">질문 검색</span>
+							</li>
+							<li class="row">
+								<div class="ico ico-7 cell"></div><span class="cell">유저 검색</span>
+							</li>
+							<li class="row">
+								<div class="ico ico-8 cell"></div><span class="cell">전문가 검색</span>
+							</li>
+						</ul>
+					</nav>
+				</form>
+			</div>
+		</div>
+		<div class="sub-menu-bar row">
+			<div class="con">
+				<nav class="menu-1 cell">
+					<ul class="row active">
+						<li class="cell">
+							<a href="#" class="block">홈</a>
+						</li>
+						<li class="cell">
+							<a href="#" class="block">사진</a>
+						</li>
+						<li class="cell">
+							<a href="#" class="block">집들이</a>
+						</li>
+						<li class="cell">
+							<a href="#" class="block">노하우</a>
+						</li>
+						<li class="cell">
+							<a href="#" class="block">전문가집들이</a>
+						</li>
+						<li class="cell">
+							<a href="#" class="block">셀프가이드</a>
+						</li>
+						<li class="cell">
+							<a href="#" class="block">질문과답변</a>
+						</li>
+						<li class="cell">
+							<a href="#" class="block">이벤트</a>
+						</li>
+					</ul>
+					<ul class="row">
+						<li class="cell">
+							<a href="#" class="block">스토어홈</a>
+						</li>
+						<li class="cell">
+							<a href="#" class="block">카테고리</a>
+							<div class="sub-menu-type-1">
+								<div class="con">
+									<ul class="row">
+										<li class="cell">
+											<a href="#" class="img-box block">
+												<img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-0.png/320/320" alt="">
+											</a>
+											<span>가구</span>
+										</li>
+										<li class="cell">
+											<a href="#" class="img-box block">
+												<img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-1.png/320/320" alt="">
+											</a>
+											<span>패브릭</span>
+										</li>
+										<li class="cell">
+											<a href="#" class="img-box block">
+												<img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-2.png/320/320" alt="">
+											</a>
+											<span>홈데코/조명</span>
+										</li>
+										<li class="cell">
+											<a href="#" class="img-box block">
+												<img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-3.png/320/320" alt="">
+											</a>
+											<span>가전</span>
+										</li>
+										<li class="cell">
+											<a href="#" class="img-box block">
+												<img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-4.png/320/320" alt="">
+											</a>
+											<span>수납/생활</span>
+										</li>
+										<li class="cell">
+											<a href="#" class="img-box block">
+												<img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-5.png/320/320" alt="">
+											</a>
+											<span>주방</span>
+										</li>
+										<li class="cell">
+											<a href="#" class="img-box block">
+												<img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-6.png/320/320" alt="">
+											</a>
+											<span>DIY자재</span>
+										</li>
+										<li class="cell">
+											<a href="#" class="img-box block">
+												<img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-7.png/320/320" alt="">
+											</a>
+											<span>시공/주문제작</span>
+										</li>
+										<li class="cell">
+											<a href="#" class="img-box block">
+												<img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-8.png/320/320" alt="">
+											</a>
+											<span>반려동물</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="cell">
+							<a href="#" class="block">
+								신혼가구
+								<span class="ico ico-new"></span>
+							</a>
+						</li>
+						<li class="cell">
+							<a href="#" class="block">랭킹</a>
+						</li>
+						<li class="cell">
+							<a href="#" class="block">SALE</a>
+						</li>
+						<li class="cell">
+							<a href="#" class="block">매일꿀템</a>
+						</li>
+					</ul>
+					<ul class="row">
+						<li class="cell">
+							<a href="#" class="block">전문가홈</a>
+						</li>
+						<li class="cell">
+							<a href="#" class="block">견적계산</a>
+						</li>
+						<li class="cell">
+							<a href="#" class="block">전문가찾기</a>
+						</li>
+						<li class="cell">
+							<a href="#" class="block">방산시장</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="#" class="btn-down-app block cell-right row">
+					<div class="ico ico-app cell"></div>
+					<span class="cell"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<section class="con-min-width">
+		<div class="main_img con">
+			<ul class="row">
+				<li class="cell relative">
+					<div class="img-box">
+						<img src="images/main_img2.JPG" alt="">
+					</div>
+					<div class="text-box row absolute-bottom">
+						<div class="head">전원주택 부럽지 않은 '정원이 있는 아파트'</div>
+						<div class="text_box_con row relative">
+							<div class="img-box cell">
+								<img src="images/main_id_image.jpg" alt="">
+							</div>
+							<div class="id cell">hooyou_</div>
+							<a href="#" class="more absolute-right">보러가기</a>
+						</div>
+					</div>
+				</li>
+				<li class="carousel-2 cell relative">
+					<ul class="owl-carousel owl-theme">
+						<li class="item" style="background-image:url(./images/side_img1.jpg);"></li>
+						<li class="item" style="background-image:url(./images/side_img2.jpg);"></li>
+						<li class="item" style="background-image:url(./images/side_img3.jpg);"></li>
+						<li class="item" style="background-image:url(./images/side_img4.jpg);"></li>
+						<li class="item" style="background-image:url(./images/side_img5.jpg);"></li>
+						<li class="item" style="background-image:url(./images/side_img6.jpg);"></li>
+						<li class="item" style="background-image:url(./images/side_img7.jpg);"></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="mobile-banner">
+				<ul class="owl-carousel owl-theme">
+					<li class="item" style="background-image:url(images/banner_bottom_img1.jpg);"></li>
+					<li class="item" style="background-image:url(images/banner_bottom_img2.jpg);"></li>
+					<li class="item" style="background-image:url(images/banner_bottom_img3.jpg);"></li>
+					<li class="item" style="background-image:url(images/banner_bottom_img4.jpg);"></li>
+					<li class="item" style="background-image:url(images/banner_bottom_img5.jpg);"></li>
+					<li class="item" style="background-image:url(images/banner_bottom_img6.jpg);"></li>
+					<li class="item" style="background-image:url(images/banner_bottom_img7.jpg);"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="middle_img con relative">
+			<ul class="row con">
+				<li class="cell text-align-center">
+					<a href="#">
+						<div class="img-box"><img src="https://d1nyaccf3kuclt.cloudfront.net/assets/banners/shortcut/home-short-1.svg" alt=""></div>
+						<div class="head">평수필터</div>
+						<div class="content">평수별로 집구경</div>
+					</a>
+				</li>
+				<li class="cell text-align-center">
+					<a href="#">
+						<div class="img-box"><img src="https://d1nyaccf3kuclt.cloudfront.net/assets/banners/shortcut/home-short-2.svg" alt=""></div>
+						<div class="head">공간필터</div>
+						<div class="content">공간별로 사진보기</div>
+					</a>
+				</li>
+				<li class="cell text-align-center">
+					<a href="#">
+						<div class="img-box"><img src="https://d1nyaccf3kuclt.cloudfront.net/assets/banners/shortcut/home-short-3.svg" alt=""></div>
+						<div class="head">쇼핑하기</div>
+						<div class="content">카테고리 쇼핑</div>
+					</a>
+				</li>
+				<li class="cell text-align-center">
+					<a href="#">
+						<div class="img-box"><img src="https://d1nyaccf3kuclt.cloudfront.net/assets/banners/shortcut/home-short-4.svg" alt=""></div>
+						<div class="head">전문가 찾기</div>
+						<div class="content">인테리어시공 필요해요?</div>
+					</a>
+				</li>
+				<li class="cell text-align-center">
+					<a href="#">
+						<div class="img-box"><img src="https://d1nyaccf3kuclt.cloudfront.net/assets/banners/shortcut/home-short-5.svg" alt=""></div>
+						<div class="head">신혼가구</div>
+						<div class="content">예신예랑 인기템</div>
+					</a>
+				</li>
+				<li class="cell text-align-center">
+					<a href="#">
+						<div class="img-box"><img src="https://d1nyaccf3kuclt.cloudfront.net/assets/banners/shortcut/home-short-6.svg" alt=""></div>
+						<div class="head">셀프 가이드</div>
+						<div class="content">셀프 인테리어 핵심만</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="story_box con">
+			<h2>오늘의 스토리</h2>
+			<ul class="row con">
+				<li class="cell">
+					<a href="#">
+						<div class="img-box"><img src="images/story_img1.jpg" alt=""></div>
+						<div class="content_box">
+							<div class="head"></div>
+							<div class="content">두 사람의 대화가 녹아든 네추럴하고 실용적인 신혼집</div>
+							<div class="id_box row">
+								<div class="img-box cell"><img src="images/story_id_img1.jpg" alt=""></div>
+								<div class="user_id cell">쩡바비</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="cell">
+					<a href="#">
+						<div class="img-box"><img src="images/story_img2.jpg" alt=""></div>
+						<div class="content_box">
+							<div class="head">TV없는 거실풍경</div>
+							<div class="content">컬러풀한 아이템이 매력적인 집</div>
+							<div class="id_box row">
+								<div class="img-box cell"><img src="images/story_id_img2.jpg" alt=""></div>
+								<div class="user_id cell">오늘의추천</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="cell">
+					<a href="#">
+						<div class="img-box"><img src="images/story_img3.jpg" alt=""></div>
+						<div class="content_box">
+							<div class="head">집멍이와 집냥이</div>
+							<div class="content">만렙집사도 솔깃할 8가지 노하우</div>
+							<div class="id_box row">
+								<div class="img-box cell"><img src="images/story_id_img3.jpg" alt=""></div>
+								<div class="user_id cell">sunny♥♥</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="cell">
+					<ul class="last_box">
+						<li class="relative">
+							<a href="#">
+								<div class="content_1">예쁜 집 구경하기</div>
+								<div class="content_2">집들이</div>
+								<i class="fas fa-chevron-right absolute-middle absolute-right"></i>
+							</a>
+						</li>
+						<li class="relative">
+							<a href="#">
+								<div class="content_1">전문가 시공사례</div>
+								<div class="content_2">전문가 집들이</div>
+								<i class="fas fa-chevron-right absolute-middle absolute-right"></i>
+							</a>
+						</li>
+						<li class="relative">
+							<a href="#">
+								<div class="content_1">인테리어 꿀팁 총 집합</div>
+								<div class="content_2">노하우</div>
+								<i class="fas fa-chevron-right absolute-middle absolute-right"></i>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="today_photo_box con">
+			<div class="menu_bar row relative">
+				<div class="menu_left cell">
+					<h2>오늘의 인기 사진</h2>
+				</div>
+				<div class="menu_right absolute-middle absolute-right"><a href="#">더보기</a></div>
+			</div>
+			<ul class="row">
+				<li class="cell relative"><a href="#">
+						<div class="img-box">
+							<img src="images/today_img1.jpg" alt="">
+						</div>
+						<img class="absolute-top" src="images/git.png" alt="">
+						<span class="absolute-top">1</span>
+						<div class="id_img absolute">
+							<div class="img-box"><img src="images/id_img1.jpg" alt=""></div>
+						</div>
+						<div class="id absolute">Erm</div>
+					</a></li>
+				<li class="cell relative"><a href="#">
+						<div class="img-box"><img src="images/today_img2.jpg" alt=""></div>
+						<img class="absolute-top" src="images/git.png" alt="">
+						<span class="absolute-top">2</span>
+						<div class="id_img absolute">
+							<div class="img-box"><img src="images/id_img2.jpg" alt=""></div>
+						</div>
+						<div class="id absolute">Liberta</div>
+					</a></li>
+				<li class="cell relative"><a href="#">
+						<div class="img-box"><img src="images/today_img3.jpg" alt=""></div>
+						<img class="absolute-top" src="images/git.png" alt="">
+						<span class="absolute-top">3</span>
+						<div class="id_img absolute">
+							<div class="img-box"><img src="images/id_img3.jpg" alt=""></div>
+						</div>
+						<div class="id absolute">임고은</div>
+					</a></li>
+				<li class="cell relative"><a href="#">
+						<div class="img-box"><img src="images/today_img4.jpg" alt=""></div>
+						<div class="id_img absolute">
+							<div class="img-box"><img src="images/id_img4.jpg" alt=""></div>
+						</div>
+						<div class="id absolute">봉주르재즈</div>
+					</a></li>
+				<li class="cell relative"><a href="#">
+						<div class="img-box"><img src="images/today_img5.jpg" alt=""></div>
+						<div class="id_img absolute">
+							<div class="img-box"><img src="images/id_img5.jpg" alt=""></div>
+						</div>
+						<div class="id absolute">나의 작은 집</div>
+					</a></li>
+				<li class="cell relative"><a href="#">
+						<div class="img-box"><img src="images/today_img6.jpg" alt=""></div>
+						<div class="id_img absolute">
+							<div class="img-box"><img src="images/id_img6.jpg" alt=""></div>
+						</div>
+						<div class="id absolute">은재32</div>
+					</a></li>
+				<li class="cell relative"><a href="#">
+						<div class="img-box"><img src="images/today_img7.jpg" alt=""></div>
+						<div class="id_img absolute">
+							<div class="img-box"><img src="images/id_img7.jpg" alt=""></div>
+						</div>
+						<div class="id absolute">찌니끄</div>
+					</a></li>
+				<li class="cell relative"><a href="#">
+						<div class="img-box"><img src="images/today_img8.jpg" alt=""></div>
+						<div class="id_img absolute">
+							<div class="img-box"><img src="images/id_img8.jpg" alt=""></div>
+						</div>
+						<div class="id absolute">브러쉬오프</div>
+					</a></li>
+			</ul>
+		</div>
+		<div class="bottom_img con">
+			<a href="#">
+				<div class="img-box"><img src="images/footer_img1.JPG" alt=""></div>
+			</a>
+		</div>
+		<div class="kikiki con">
+			<div class="menu_bar row relative">
+				<div class="menu_left cell">
+					<h2>오늘의 기획전</h2>
+				</div>
+				<div class="menu_right absolute-middle absolute-right"><a href="#">더보기</a></div>
+			</div>
+			<div class="my-1 owl-carousel owl-theme">
+				<div class="item">
+					<div class="img-box"><img src="images/today_event_1.jpg" alt=""></div>
+					<div class="content_box">
+						<div class="content_category">5%쿠폰-마메종/JMW/리픽스/마켓비/리훈/로로독</div>
+						<div class="head">'오늘'의 NEW BRAND #5 (~5/10)</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img-box"><img src="images/today_event_2.jpg" alt=""></div>
+					<div class="content_box">
+						<div class="content_category">늘 드리던 그 꽃다발 말고</div>
+						<div class="head">올해는 특별한 카네이션</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img-box"><img src="images/today_event_3.jpg" alt=""></div>
+					<div class="content_box">
+						<div class="content_category">지금 가장 추천하는 #봄이불 #커튼/블라인드 #러그</div>
+						<div class="head">[단독특가] FABRIC BEST BRAND 10</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img-box"><img src="images/today_event_4.jpg" alt=""></div>
+					<div class="content_box">
+						<div class="content_category">우드/알루미늄/콤비/롤스크린 등 다양한 소재의 블라인드</div>
+						<div class="head">[블라인드] 은은한 채광부터 아늑한 암막까지</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img-box"><img src="images/today_event_5.jpg" alt=""></div>
+					<div class="content_box">
+						<div class="content_category">#최저가 #MD추천 #품질만족</div>
+						<div class="head">[4월 브랜드할인] 레이디가구</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img-box"><img src="images/today_event_6.jpg" alt=""></div>
+					<div class="content_box">
+						<div class="content_category">#매트리스 #토퍼 #베개 #바디필로우 #홈웨어</div>
+						<div class="head">잠 설치는 이유, 베개 때문일지 몰라요</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img-box"><img src="images/today_event_7.jpg" alt=""></div>
+					<div class="content_box">
+						<div class="content_category">어지러운 책상위에 변화를 주고 싶은 날!</div>
+						<div class="head">지금 시작하는 데스크테리어</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img-box"><img src="images/today_event_8.jpg" alt=""></div>
+					<div class="content_box">
+						<div class="content_category">5%쿠폰- 데이드리머/아이코닉/그라니트/세븐비/듀오백</div>
+						<div class="head">'오늘'의 NEW BRAND #4 (~4/26)</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img-box"><img src="images/today_event_9.jpg" alt=""></div>
+					<div class="content_box">
+						<div class="content_category">사계절 내내 플랜테리어</div>
+						<div class="head">식물킬러도 괜찮아, 조화가 있잖아!</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img-box"><img src="images/today_event_10.jpg" alt=""></div>
+					<div class="content_box">
+						<div class="content_category">#발수 #워셔블 #신소재 #패브릭소파</div>
+						<div class="head">소재 탐구생활 vol. 2 기능성소파</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img-box"><img src="images/today_event_11.jpg" alt=""></div>
+					<div class="content_box">
+						<div class="content_category">이 계절에 키우기 좋은 식물을 소개합니다</div>
+						<div class="head">지금 필요한 이런 식물</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="furniture con">
+			<div class="menu_bar row relative">
+				<div class="menu_left cell">
+					<h2>오늘의 신혼가구</h2>
+				</div>
+				<div class="menu_right absolute-middle absolute-right"><a href="#">더보기</a></div>
+
+			</div>
+			<ul class="row">
+				<li class="cell"><a href="#">
+						<div class="img-box"><img src="images/furniture1.jpg" alt=""></div>
+						<div class="content">유메11 애쉬원목거울 3종 택1</div>
+						<div class="bottom row">
+							<div class="discount_rate cell">62%</div>
+							<div class="price">49,000</div>
+						</div>
+					</a></li>
+				<li class="cell"><a href="#">
+						<div class="img-box"><img src="images/furniture2.jpg" alt=""></div>
+						<div class="content">[희망일배송] 론다 3인용 워셔블패브릭 소파베드</div>
+						<div class="bottom row">
+							<div class="discount_rate cell">60%</div>
+							<div class="price">346,000</div>
+						</div>
+					</a></li>
+				<li class="cell"><a href="#">
+						<div class="img-box"><img src="images/furniture3.jpg" alt=""></div>
+						<div class="content">레마테이블&의자 다이닝세트 3종택1</div>
+						<div class="price">240,000</div>
+					</a></li>
+				<li class="cell"><a href="#">
+						<div class="img-box"><img src="images/furniture4.jpg" alt=""></div>
+						<div class="content">아크 코트 랙 6colors</div>
+						<div class="price">83,000</div>
+					</a></li>
+				<li class="cell"><a href="#">
+						<div class="img-box"><img src="images/furniture5.jpg" alt=""></div>
+						<div class="content">스카겐 av 장식장</div>
+						<div class="bottom row">
+							<div class="discount_rate cell">41%</div>
+							<div class="price">329,000</div>
+						</div>
+					</a></li>
+				<li class="cell"><a href="#">
+						<div class="img-box"><img src="images/furniture6.jpg" alt=""></div>
+						<div class="content">[희망일배송] 투컷 오크 침대프레임 2종 택1(SS/Q)</div>
+						<div class="price">1,280,000</div>
+					</a></li>
+			</ul>
+		</div>
+		<div class="new_item con">
+			<div class="menu_bar">
+				<div class="menu_left">
+					<h2>오늘의 신상품! 👀 ⚡</h2>
+				</div>
+			</div>
+			<div class="basic_1">
+				<div class="owl-carousel owl-theme">
+					<div class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/new_item1.jpg" alt=""></div>
+							<div class="content">[5%쿠폰] 듀엣 모노 2인 패브릭소파</div>
+							<div class="bottom row">
+								<div class="discount_rate cell">40%</div>
+								<div class="price">270,000</div>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/new_item2.jpg" alt=""></div>
+							<div class="content">[오늘의딜] 24k 어버이날 금카네이션</div>
+							<div class="bottom row">
+								<div class="discount_rate cell">6%</div>
+								<div class="price">8,300</div>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/new_item3.jpg" alt=""></div>
+							<div class="content">MUSTARD double picnicmat 양면방수 피크닉매트</div>
+							<div class="price">48,000</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/new_item4.jpg" alt=""></div>
+							<div class="content">휴대용 공기청정기(LFS-HA03) 2colors</div>
+							<div class="bottom row">
+								<div class="discount_rate cell">20%</div>
+								<div class="price">79,200</div>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/new_item5.jpg" alt=""></div>
+							<div class="content">뭐든 다 쓸어버린다! 놀라울 정도로 잘 쓸리는 쓰리잘비</div>
+							<div class="bottom row">
+								<div class="discount_rate cell">35%</div>
+								<div class="price">22,900</div>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/new_item6.jpg" alt=""></div>
+							<div class="content">트레블텀블러 500ml 8종택1</div>
+							<div class="price">42,000</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/new_item7.jpg" alt=""></div>
+							<div class="content">계란후라이 빕</div>
+							<div class="price">15,000</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/new_item8.jpg" alt=""></div>
+							<div class="content">애니메리코이 백 앤 파우치 모음전</div>
+							<div class="price">10,800</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom_img2 con">
+			<a href="#">
+				<div class="img-box"><img src="images/footer_img2.JPG" alt=""></div>
+			</a>
+		</div>
+		<div class="best100 con">
+			<div class="menu_bar row relative">
+				<div class="menu_left cell">
+					<h2>베스트 100</h2>
+				</div>
+				<div class="menu_right absolute-middle absolute-right"><a href="#">더보기</a></div>
+			</div>
+			<div class="menu_bottom">
+				<ul class="row">
+					<li class="cell"><a href="#">전체</a></li>
+					<li class="cell"><a href="#">가구</a></li>
+					<li class="cell"><a href="#">패브릭</a></li>
+					<li class="cell"><a href="#">홈데코/조명</a></li>
+					<li class="cell"><a href="#">가전</a></li>
+					<li class="cell"><a href="#">수납/생활</a></li>
+					<li class="cell"><a href="#">주방</a></li>
+					<li class="cell active"><a href="#">DIY자재</a></li>
+					<li class="cell"><a href="#">반려동물</a></li>
+				</ul>
+			</div>
+			<ul class="row">
+				<li class="cell relative"><a href="#">
+						<div class="img-box"><img src="images/best_100_1.jpg" alt=""></div>
+						<img class="absolute-top" src="images/git.png" alt="">
+						<span class="absolute-top">1</span>
+						<div class="content">[주말특가][4/25예약발송]Mary 원목 조립식마루 10P 3colors</div>
+						<div class="bottom row">
+							<div class="discount_rate cell">56%</div>
+							<div class="price">22,900</div>
+						</div>
+					</a></li>
+				<li class="cell relative"><a href="#">
+						<div class="img-box"><img src="images/best_100_2.jpg" alt=""></div>
+						<img class="absolute-top" src="images/git.png" alt="">
+						<span class="absolute-top">2</span>
+						<div class="content">20mm 쿠션코일매트 4colors</div>
+						<div class="bottom row">
+							<div class="discount_rate cell">40%</div>
+							<div class="price">210</div>
+						</div>
+					</a></li>
+				<li class="cell relative"><a href="#">
+						<div class="img-box"><img src="images/best_100_3.jpg" alt=""></div>
+						<img class="absolute-top" src="images/git.png" alt="">
+						<span class="absolute-top">3</span>
+						<div class="content">MUPAN 원목 조립마루(30x30/10개입)</div>
+						<div class="bottom row">
+							<div class="discount_rate cell">41%</div>
+							<div class="price">29,800</div>
+						</div>
+					</a></li>
+				<li class="cell relative con"><a href="#">
+						<div class="img-box"><img src="images/best_100_3.jpg" alt=""></div>
+						<div class="content text-align-center absolute-middle">랭킹 더보기</div>
+						<i class="fas fa-chevron-right fa-2x absolute-middle"></i>
+					</a></li>
+			</ul>
+
+			<a href="#" class="block">
+				<div class="more_option">랭킹 보러가기</div>
+			</a>
+		</div>
+		<div class="best100_event con">
+			<ul class="row con">
+				<li class="cell">
+					<a href="#" class="block">
+						<div class="text_box row">
+							<div class="event cell">OPEN</div>
+							<div class="head cell">전문가 가입신청</div>
+							<div class="content cell">인테리어 전문가님! 오늘의 집과 함께하세요<i class="fas fa-chevron-right"></i></div>
+						</div>
+					</a>
+				</li>
+				<li class="cell-right">
+					<a href="#" class="block">
+						<div class="text_box row">
+							<div class="head cell">사업자 구매 회원 전환</div>
+							<div class="content cell">사업자 회원에게 구매 시 혜택을 드립니다<i class="fas fa-chevron-right"></i></div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<footer class="con-min-width">
+		<div class="footer_box con row">
+			<a href="#" class="cell block">고객센터 ></a>
+			<ul class="sns_box row cell-right">
+				<li><a href="#" class="block cell"></a></li>
+				<li><a href="#" class="block cell"></a></li>
+				<li><a href="#" class="block cell"></a></li>
+				<li><a href="#" class="block cell"></a></li>
+				<li><a href="#" class="block cell"></a></li>
+				<li><a href="#" class="block cell"></a></li>
+			</ul>
+		</div>
+		<div class="phone_number con"><a href="#">1670-0876</a>
+			<p>평일 10:00~17:00 (점심시간 12:00~13:00 / 주말&공휴일 제외)</p>
+		</div>
+		<div class="sns_box row con">
+			<a href="#" class="block cell"></a>
+			<a href="#" class="block cell"></a>
+			<a href="#" class="block cell"></a>
+			<a href="#" class="block cell"></a>
+			<a href="#" class="block cell"></a>
+			<a href="#" class="block cell"></a>
+		</div>
+		<div class="footer_box_1 con row">
+			<a href="#" class="cell">서비스소개</a>
+			<a href="#" class="cell">회사소개</a>
+			<a href="#" class="cell">채용정보</a>
+			<a href="#" class="cell">이용약관</a>
+			<a href="#" class="cell">개인정보취급방침</a>
+			<a href="#" class="cell">고객센터</a>
+			<a href="#" class="cell">고객의 소리</a>
+			<a href="#" class="cell">전문가 등록</a>
+			<a href="#" class="cell">사업자 구매회원</a>
+			<a href="#" class="cell">제휴/광고 문의</a>
+			<a href="#" class="cell">입점신청 문의</a>
+		</div>
+		<div class="footer_box_2 con row relative">
+			<p><a href="#">상호명 : (주)버킷플레이스</a>
+				<a href="#">이메일 : contact@bucketplace.net</a>
+				대표이사 : 이승재
+				사업자등록번호 : 119-86-91245
+				통신판매업신고번호 : 제2018-서울서초-0580호
+				주소 : 서울특별시 서초구 강남대로 373 홍우빌딩 14층 버킷플레이스</p>
+			<p class="footer_nice cell">NICEPAY 안전거래 서비스 : 고객님의 안전거래를 위해 현금 결제 시, 저희 사이트에서 가입한 구매안전 서비스를 이용할 수 있습니다. </p>
+			<p><a href="#" class="cell"> 가입확인</a></p>
+		</div>
+		<div class="footer_copy con">Copyright © 2014 by Bucketplace Inc All Rights Reserved</div>
+	</footer>
+
+	<script src="index.js"></script>
+</body>
+
+</html>

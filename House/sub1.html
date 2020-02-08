@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>오늘의집</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS 불러오기 -->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sub1.css">
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- owl 캐러셀 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="top-box con-min-width">
+        <div class="top-bar">
+            <div class="con row">
+                <a href="./index.html" class="logo block cell"></a>
+                <nav class="menu-1 cell">
+                    <ul class="row">
+                        <li class="cell selected"><a href="./index.html" class="block">커뮤니티</a></li>
+                        <li class="cell active"><a href="./sub1.html" class="block">스토어</a></li>
+                        <li class="cell"><a href="./sub2.html" class="block">전문가</a></li>
+                    </ul>
+                </nav>
+                <nav class="btn-close cell">
+                    <a href="#">
+                        <div class="ico ico-etc-hamburger"></div>
+                    </a>
+                </nav>
+                <div class="left-side-bar">
+                    <div class="left-side-bar_header relative row">
+                        <a href="#" class="top_logo absolute block cell"></a>
+                        <div class="top_link cell-right relative row">
+                            <a href="#" class="block cell-right">앱다운로드
+                                <div class="top_home absolute cell"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="left-side-bar_user_log row">
+                        <a href="#" class="log block cell">로그인</a>
+                        <a href="#" class="join block cell-right">회원가입</a>
+                    </div>
+                    <div class="left-side-bar_primary_menu">
+                        <ul class="left-side-bar_menu_1 row">
+                            <li>
+                                <a href="#" class="block">
+                                    <div class="title row relative">
+                                        <span class="icon com cell"></span>
+                                        <div class="cell active">커뮤니티</div>
+                                        <span class="open_button cell-right"><i class="fas fa-chevron-down"></i></span>
+                                    </div>
+                                </a>
+                                <ul class="row">
+                                    <li><a href="./index.html" class="block">홈</a></li>
+                                    <li><a href="#" class="block">사진</a></li>
+                                    <li><a href="#" class="block">집들이</a></li>
+                                    <li><a href="#" class="block">노하우</a></li>
+                                    <li><a href="#" class="block">전문가집들이</a></li>
+                                    <li><a href="#" class="block"></a>셀프가이드</li>
+                                    <li><a href="#" class="block">질문과답변</a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="title row relative">
+                                        <span class="icon str cell"></span>
+                                        <div class="cell">스토어</div>
+                                        <span class="open_button cell-right"><i class="fas fa-chevron-down"></i></span>
+                                    </div>
+                                </a>
+                                <ul class="row">
+                                    <li><a href="./sub1.html" class="block">스토어홈</a></li>
+                                    <li><a href="#" class="block">신혼가구</a></li>
+                                    <li><a href="#" class="block">랭킹</a></li>
+                                    <li><a href="#" class="block">SALE</a></li>
+                                    <li><a href="#" class="block">매일꿀템</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="title row relative">
+                                        <span class="icon exp cell"></span>
+                                        <div class="cell">전문가</div>
+                                        <span class="open_button cell-right"><i class="fas fa-chevron-down"></i></span>
+                                    </div>
+                                </a>
+                                <ul class="row">
+                                    <li><a href="./sub2.html" class="block">전문가홈</a></li>
+                                    <li><a href="#" class="block">견적계산</a></li>
+                                    <li><a href="#" class="block">전문가찾기</a></li>
+                                    <li><a href="#" class="block">방산시장</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="left-side-bar_bottom_menu">
+                        <ul class="menu_1">
+                            <li><a href="#" class="block">마이홈</a></li>
+                            <li><a href="#" class="block">나의 쇼핑</a></li>
+                            <li><a href="#" class="block">알림</a></li>
+                            <li><a href="#" class="block">이벤트</a></li>
+                            <li><a href="#" class="block">사진 올리기</a></li>
+                            <li><a href="#" class="block">질문하기</a></li>
+                        </ul>
+                        <ul class="menu_2">
+                            <li><a href="#" class="block">판매자 신청</a></li>
+                        </ul>
+                    </div>
+                    <div class="left-side-bar_user_bottom"></div>
+                </div>
+                <div class="left-side-bar-bg"></div>
+                <nav class="menu-2 cell-right">
+                    <ul class="row">
+                        <li class="cell"><a href="#" class="block">로그인</a></li>
+                        <li class="cell"><a href="#" class="block">회원가입</a></li>
+                    </ul>
+                </nav>
+                <div class="btn-cart cell-right">
+                    <div class="ico ico-cart"></div>
+                </div>
+                <div class="btn-write cell-right">
+                    글쓰기
+                </div>
+                <div class="btn-search cell-right">
+                    <div class="ico ico-search"></div>
+                </div>
+                <form class="search-box cell-right relative block">
+                    <div class="ico ico-search absolute-left absolute-middle"></div>
+                    <input type="text" class="block" placeholder="검색">
+                    <nav class="search-option-menu">
+                        <ul>
+                            <li class="row">
+                                <div class="ico ico-1 cell"></div><span class="cell">사진 검색</span>
+                            </li>
+                            <li class="row">
+                                <div class="ico ico-2 cell"></div><span class="cell">집들이 검색</span>
+                            </li>
+                            <li class="row">
+                                <div class="ico ico-3 cell"></div><span class="cell">노하우 검색</span>
+                            </li>
+                            <li class="row">
+                                <div class="ico ico-4 cell"></div><span class="cell">가구소품 검색</span>
+                            </li>
+                            <li class="row">
+                                <div class="ico ico-5 cell"></div><span class="cell">스토어 검색</span>
+                            </li>
+                            <li class="row">
+                                <div class="ico ico-6 cell"></div><span class="cell">질문 검색</span>
+                            </li>
+                            <li class="row">
+                                <div class="ico ico-7 cell"></div><span class="cell">유저 검색</span>
+                            </li>
+                            <li class="row">
+                                <div class="ico ico-8 cell"></div><span class="cell">전문가 검색</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </form>
+            </div>
+        </div>
+        <div class="sub-menu-bar row">
+            <div class="con">
+                <nav class="menu-1 cell">
+                    <ul class="row active">
+                        <li class="cell">
+                            <a href="#" class="block">홈</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block">사진</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block">집들이</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block">노하우</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block">전문가집들이</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block">셀프가이드</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block">질문과답변</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block">이벤트</a>
+                        </li>
+                    </ul>
+                    <ul class="row">
+                        <li class="cell">
+                            <a href="#" class="block">스토어홈</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block">카테고리</a>
+                            <div class="sub-menu-type-1">
+                                <div class="con">
+                                    <ul class="row">
+                                        <li class="cell">
+                                            <a href="#" class="img-box block">
+                                                <img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-0.png/320/320"
+                                                    alt="">
+                                            </a>
+                                            <span>가구</span>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="#" class="img-box block">
+                                                <img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-1.png/320/320"
+                                                    alt="">
+                                            </a>
+                                            <span>패브릭</span>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="#" class="img-box block">
+                                                <img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-2.png/320/320"
+                                                    alt="">
+                                            </a>
+                                            <span>홈데코/조명</span>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="#" class="img-box block">
+                                                <img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-3.png/320/320"
+                                                    alt="">
+                                            </a>
+                                            <span>가전</span>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="#" class="img-box block">
+                                                <img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-4.png/320/320"
+                                                    alt="">
+                                            </a>
+                                            <span>수납/생활</span>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="#" class="img-box block">
+                                                <img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-5.png/320/320"
+                                                    alt="">
+                                            </a>
+                                            <span>주방</span>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="#" class="img-box block">
+                                                <img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-6.png/320/320"
+                                                    alt="">
+                                            </a>
+                                            <span>DIY자재</span>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="#" class="img-box block">
+                                                <img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-7.png/320/320"
+                                                    alt="">
+                                            </a>
+                                            <span>시공/주문제작</span>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="#" class="img-box block">
+                                                <img src="https://image.ohou.se/image/central_crop/bucketplace-v2-development/uploads-product_category-8.png/320/320"
+                                                    alt="">
+                                            </a>
+                                            <span>반려동물</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block">
+                                신혼가구
+                                <span class="ico ico-new"></span>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block">랭킹</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block">SALE</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block">매일꿀템</a>
+                        </li>
+                    </ul>
+                    <ul class="row">
+                        <li class="cell">
+                            <a href="#" class="block">전문가홈</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block">견적계산</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block">전문가찾기</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block">방산시장</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="btn-down-app block cell-right row">
+                    <div class="ico ico-app cell"></div>
+                    <span class="cell"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <section>
+        <div class="top_banner_wrap text-align-center">
+            <a href="#">
+                <span class="banner_badge">기간한정</span>
+                <span class="banner_text">첫구매라면? 총10,000원 할인!</span>
+                <span class="banner_more">바로 할인 받기</span>
+            </a>
+        </div>
+        <div class="slider-box-1 con relative">
+            <div class="slides">
+                <div style="background-color:#F0DCCD;" class="active">
+                    <div class="content_wrap con relative">
+                        <div class="content_box absolute-middle">
+                            <div class="content_title">3일 동안</div>
+                            <div class="content_title">주말특가</div>
+                            <div class="content_sub_title">주말에만 오는 특가를 기다렸어 !</div>
+                        </div>
+                        <div class="img-box absolute-middle absolute-right"><img src="./images/sub2_slider_img_1.jpg"
+                                alt=""></div>
+                    </div>
+                </div>
+                <div style="background-color:#EEEEEE;">
+                    <div class="content_wrap con relative">
+                        <div class="content_box absolute-middle">
+                            <div class="content_title">NEW BRAND #5</div>
+                            <div class="content_sub_title">마켓비/마메종/리픽스/JMW/로로독/리훈</div>
+                        </div>
+                        <div class="img-box absolute-middle absolute-right"><img src="./images/sub1_slider_img2.jpg"
+                                alt=""></div>
+                    </div>
+                </div>
+                <div style="background-color:#F5F5F3;">
+                    <div class="content_wrap con relative">
+                        <div class="content_box absolute-middle">
+                            <div class="content_title">내츄럴 스타일링,</div>
+                            <div class="content_title">라탄 인테리어</div>
+                            <div class="content_sub_title">#내츄럴 #아늑함 #따뜻함</div>
+                        </div>
+                        <div class="img-box absolute-middle absolute-right"><img src="./images/sub1_slider_img3.jpg"
+                                alt=""></div>
+                    </div>
+                </div>
+                <div style="background-color:#E5E4E9;">
+                    <div class="content_wrap con relative">
+                        <div class="content_box absolute-middle">
+                            <div class="content_title">오늘의집X에델코첸</div>
+                            <div class="content_sub_title">#단독특가 #기간한정 이벤트</div>
+                        </div>
+                        <div class="img-box absolute-middle absolute-right"><img src="./images/sub1_slider_img4.jpg"
+                                alt=""></div>
+                    </div>
+                </div>
+                <div style="background-color:#F2F2F4;">
+                    <div class="content_wrap con relative">
+                        <div class="content_box absolute-middle">
+                            <div class="content_title">특별하게</div>
+                            <div class="content_title">마음을 전해요</div>
+                            <div class="content_sub_title">올해는 더 특별하게 감사를 전하고 싶다면</div>
+                        </div>
+                        <div class="img-box absolute-middle absolute-right"><img src="./images/sub1_slider_img1.jpg"
+                                alt=""></div>
+                    </div>
+                </div>
+                <div style="background-color:#7D8E79;">
+                    <div class="content_wrap con relative">
+                        <div class="content_box absolute-middle">
+                            <div class="content_title">뉴-트로</div>
+                            <div class="content_title">인테리어</div>
+                            <div class="content_sub_title">세련된 빈티지스타일, 뉴트로 인테리어 따라잡기</div>
+                        </div>
+                        <div class="img-box absolute-middle absolute-right"><img src="./images/sub2_slider_img_7.jpg"
+                                alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pages">
+                <div class="active row">
+                    <div class="img-box cell"><img src="images/sub1_side_img1.jpg" alt=""></div>
+                    <div class="content cell">특별하게 마음을 전해요</div>
+                </div>
+                <div class="row">
+                    <div class="img-box cell"><img src="images/sub1_side_img4.jpg" alt=""></div>
+                    <div class="content cell">바이리네, 미니멀 라이프 스타일</div>
+                </div>
+                <div class="row">
+                    <div class="img-box cell"><img src="images/sub1_side_img3.jpg" alt=""></div>
+                    <div class="content cell">내츄럴 스타일링, 라탄 인테리어</div>
+                </div>
+                <div class="row">
+                    <div class="img-box cell"><img src="images/sub1_side_img5.jpg" alt=""></div>
+                    <div class="content cell">공간별 시공 서비스 OPEN</div>
+                </div>
+                <div class="row">
+                    <div class="img-box cell"><img src="images/sub1_side_img1.jpg" alt=""></div>
+                    <div class="content cell">새로운 한주의 시작</div>
+                </div>
+                <div class="row">
+                    <div class="img-box cell"><img src="images/sub1_side_img2.jpg" alt=""></div>
+                    <div class="content cell">뉴-트로 인테리어</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="today_reco con">
+            <div class="menu_bar row relative">
+                <div class="menu_left cell">
+                    <h2>오늘의 추천</h2>
+                </div>
+                <div class="menu_right absolute-middle absolute-right"><a href="#">더보기</a></div>
+
+            </div>
+            <ul class="row text-align-center">
+                <li class="cell">
+                    <div><a href="#">
+                            <div class="img-box"><img src="images/today_reco1.jpg" alt=""></div>
+                            <div class="content">마약베개가 뭐라고 잠이 그렇게 잘 오ㄱ...zZ</div>
+                        </a></div>
+                </li>
+                <li class="cell">
+                    <div><a href="#">
+                            <div class="img-box"><img src="images/today_reco2.jpg" alt=""></div>
+                            <div class="content">인테리어 살리는 거울, 텅장 살리는<br> 가격</div>
+                        </a></div>
+                </li>
+                <li class="cell">
+                    <div><a href="#">
+                            <div class="img-box"><img src="images/today_reco3.jpg" alt=""></div>
+                            <div class="content">마법같은 보온,보냉! 마법같은 오늘<br> 가격</div>
+                        </a></div>
+                </li>
+                <li class="cell">
+                    <div><a href="#">
+                            <div class="img-box"><img src="images/today_reco4.jpg" alt=""></div>
+                            <div class="content">침대 옆 혁신템, 최저가로 득템하세<br>요!</div>
+                        </a></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="category con">
+            <div class="menu_bar row relative">
+                <div class="menu_left cell">
+                    <h2>카테고리</h2>
+                </div>
+            </div>
+            <nav class="menu-1">
+                <ul class="row owl-carousel text-align-center">
+                    <li class="cell"><a href="#">
+                            <div class="img-box"><img src="./images/sub_category_1.jpg" alt=""></div>
+                            <div class="name">신혼</div>
+                        </a></li>
+                    <li class="cell"><a href="#">
+                            <div class="img-box"><img src="./images/sub_category_2.jpg" alt=""></div>
+                            <div class="name">가구</div>
+                        </a></li>
+                    <li class="cell"><a href="#">
+                            <div class="img-box"><img src="./images/sub_category_3.jpg" alt=""></div>
+                            <div class="name">패브릭</div>
+                        </a></li>
+                    <li class="cell"><a href="#">
+                            <div class="img-box"><img src="./images/sub_category_4.jpg" alt=""></div>
+                            <div class="name">홈데코/조명</div>
+                        </a></li>
+                    <li class="cell"><a href="#">
+                            <div class="img-box"><img src="./images/sub_category_5.jpg" alt=""></div>
+                            <div class="name">생활</div>
+                        </a></li>
+                    <li class="cell"><a href="#">
+                            <div class="img-box"><img src="./images/sub_category_6.jpg" alt=""></div>
+                            <div class="name">가전</div>
+                        </a></li>
+                    <li class="cell"><a href="#">
+                            <div class="img-box"><img src="./images/sub_category_7.jpg" alt=""></div>
+                            <div class="name">주방</div>
+                        </a></li>
+                    <li class="cell"><a href="#">
+                            <div class="img-box"><img src="./images/sub_category_8.jpg" alt=""></div>
+                            <div class="name">반려동물</div>
+                        </a></li>
+                    <li class="cell"><a href="#">
+                            <div class="img-box"><img src="./images/sub_category_9.jpg" alt=""></div>
+                            <div class="name">플라워/식물</div>
+                        </a></li>
+                    <li class="cell"><a href="#">
+                            <div class="img-box"><img src="./images/sub_category_10.jpg" alt=""></div>
+                            <div class="name">데스크/디자인문구</div>
+                        </a></li>
+                    <li class="cell"><a href="#">
+                            <div class="img-box"><img src="./images/sub_category_11.jpg" alt=""></div>
+                            <div class="name">러그/카페트</div>
+                        </a></li>
+                    <li class="cell"><a href="#">
+                            <div class="img-box"><img src="./images/sub_category_12.jpg" alt=""></div>
+                            <div class="name">식기세트</div>
+                        </a></li>
+                    <li class="cell"><a href="#">
+                            <div class="img-box"><img src="./images/sub_category_13.jpg" alt=""></div>
+                            <div class="name">수납가구</div>
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hot_keyword con">
+            <div class="menu_bar row relative">
+                <div class="menu_left cell">
+                    <h2>인기 키워드</h2>
+                </div>
+            </div>
+            <ul class="row">
+                <li class="cell relative"><a href="#">
+                        <div class="img-box"><img src="images/hot_keyword_1.jpg" alt=""></div>
+                        <div class="content absolute">#BEST 화장대</div>
+                    </a></li>
+                <li class="cell relative"><a href="#">
+                        <div class="img-box"><img src="images/hot_keyword_2.jpg" alt=""></div>
+                        <div class="content absolute">#여름이불 #커튼/블라인드</div>
+                    </a></li>
+                <li class="cell relative"><a href="#">
+                        <div class="img-box"><img src="images/hot_keyword_3.jpg" alt=""></div>
+                        <div class="content absolute">#땡처리#한정수량</div>
+                    </a></li>
+                <li class="cell relative"><a href="#">
+                        <div class="img-box"><img src="images/hot_keyword_4.jpg" alt=""></div>
+                        <div class="content absolute">#정리노하우#넓은집</div>
+                    </a></li>
+                <li class="cell relative"><a href="#">
+                        <div class="img-box"><img src="images/hot_keyword_5.jpg" alt=""></div>
+                        <div class="content absolute">#숙면꿀템#가성비</div>
+                    </a></li>
+                <li class="cell relative"><a href="#">
+                        <div class="img-box"><img src="images/hot_keyword_6.jpg" alt=""></div>
+                        <div class="content absolute">#홈카페만들기</div>
+                    </a></li>
+                <li class="cell relative"><a href="#">
+                        <div class="img-box"><img src="images/hot_keyword_7.jpg" alt=""></div>
+                        <div class="content absolute">#꼭필요한원룸가구</div>
+                    </a></li>
+                <li class="cell relative"><a href="#">
+                        <div class="img-box"><img src="images/hot_keyword_8.jpg" alt=""></div>
+                        <div class="content absolute">#화이트인테리어</div>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="hot_product con">
+            <h2>인기 상품</h2>
+            <div class="menu_bar row relative">
+                <div class="menu_left cell">
+                    <a href="#">무료배송 <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="menu_right absolute-middle row absolute-right">
+                    <a href="#" class="cell">인기순
+                        <i class="fas cell-right fa-sort-down "></i>
+                    </a>
+                </div>
+            </div>
+            <ul class="row text-align-left">
+                <li class="cell">
+                    <div class="hot_product_box_wrap">
+                        <a href="#">
+                            <div class="img-box"><img src="images/hot_product_1.jpg" alt=""></div>
+                            <div class="product_item_box">
+                                <p class="product_item">생활공작소
+
+                                </p>
+                                <p class="content">[주말특가] 제습제 520ml x 24입</p>
+                                <div class="product_item_info_1">
+                                    <span class="discount_rate">29%</span>
+                                    <strong>16,900</strong>
+                                </div>
+                                <div class="product_item_info_2 row">
+                                    <svg class="cell" width="24" height="24" viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        style="color: rgb(53, 197, 240); width: 20px; height: 20px;">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z">
+                                        </path>
+                                    </svg>
+                                    <strong class="cell">4.6</strong>
+                                    <div class="review cell">리뷰 169</div>
+                                </div>
+                                <div class="product_item_info_3 row">
+                                    <div class="text_1 cell">무료배송</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="hot_product_box_wrap">
+                        <a href="#">
+                            <div class="img-box"><img src="images/hot_product_2.jpg" alt=""></div>
+                            <div class="product_item_box">
+                                <p class="product_item">코코도르</p>
+                                <p class="content">카네이션 디퓨저 플라워 용돈박스(쇼핑백 증정)</p>
+                                <div class="product_item_info_1">
+                                    <span class="discount_rate">70%</span>
+                                    <strong>14,900</strong>
+                                </div>
+                                <div class="product_item_info_2 row">
+                                    <svg class="cell" width="24" height="24" viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        style="color: rgb(53, 197, 240); width: 20px; height: 20px;">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z">
+                                        </path>
+                                    </svg>
+                                    <strong class="cell">4.7</strong>
+                                    <div class="review cell">리뷰 962</div>
+                                </div>
+                                <div class="product_item_info_3 row">
+                                    <div class="text_1 cell">무료배송</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="hot_product_box_wrap">
+                        <a href="#">
+                            <div class="img-box"><img src="images/hot_product_3.jpg" alt=""></div>
+                            <div class="product_item_box">
+                                <p class="product_item">보아르</p>
+                                <p class="content">[오늘의딜]모아 미니 제습기</p>
+                                <div class="product_item_info_1">
+                                    <span class="discount_rate">25%</span>
+                                    <strong>48,900</strong>
+                                </div>
+                                <div class="product_item_info_3 row">
+                                    <div class="text_1 cell">무료배송</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="hot_product_box_wrap">
+                        <a href="#">
+                            <div class="img-box"><img src="images/hot_product_4.jpg" alt=""></div>
+                            <div class="product_item_box">
+                                <p class="product_item">카모메키친</p>
+                                <p class="content">카모메 수저세트 1+1 colors</p>
+                                <div class="product_item_info_1">
+                                    <span class="discount_rate">29%</span>
+                                    <strong>9,900</strong>
+                                </div>
+                                <div class="product_item_info_2 row">
+                                    <svg class="cell" width="24" height="24" viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        style="color: rgb(53, 197, 240); width: 20px; height: 20px;">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z">
+                                        </path>
+                                    </svg>
+                                    <strong class="cell">4.6</strong>
+                                    <div class="review cell">리뷰 2,353</div>
+                                </div>
+                                <div class="product_item_info_3 row">
+                                    <div class="text_1 cell">무료배송</div>
+                                    <div class="text_2 cell">최저가</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="hot_product_box_wrap">
+                        <a href="#">
+                            <div class="img-box"><img src="images/hot_product_5.jpg" alt=""></div>
+                            <div class="product_item_box">
+                                <p class="product_item">제이앤하임</p>
+                                <p class="content">더 포슬린 세라믹식탁 4인/6인</p>
+                                <div class="product_item_info_1">
+                                    <span class="discount_rate">53%</span>
+                                    <strong>519,000</strong>
+                                </div>
+                                <div class="product_item_info_2 row">
+                                    <svg class="cell" width="24" height="24" viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        style="color: rgb(53, 197, 240); width: 20px; height: 20px;">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z">
+                                        </path>
+                                    </svg>
+                                    <strong class="cell">4.9</strong>
+                                    <div class="review cell">리뷰 13</div>
+                                </div>
+                                <div class="product_item_info_3 row">
+                                    <div class="text_2 cell">최저가</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="hot_product_box_wrap">
+                        <a href="#">
+                            <div class="img-box"><img src="images/hot_product_6.jpg" alt=""></div>
+                            <div class="product_item_box">
+                                <p class="product_item">아르페지오</p>
+                                <p class="content">레니얼 6COLORS 피그먼트워싱 블랭킷</p>
+                                <div class="product_item_info_1">
+                                    <span class="discount_rate">61%</span>
+                                    <strong>22,500</strong>
+                                </div>
+                                <div class="product_item_info_3 row">
+                                    <div class="text_1 cell">무료배송</div>
+                                    <div class="text_2 cell">최저가</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="hot_product_box_wrap">
+                        <a href="#">
+                            <div class="img-box"><img src="images/hot_product_7.jpg" alt=""></div>
+                            <div class="product_item_box">
+                                <p class="product_item">네이쳐리빙</p>
+                                <p class="content">[기간한정]인테리어 실내화 걸이 모음 3type</p>
+                                <div class="product_item_info_1">
+                                    <span class="discount_rate">66%</span>
+                                    <strong>6,500</strong>
+                                </div>
+                                <div class="product_item_info_2 row">
+                                    <svg class="cell" width="24" height="24" viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        style="color: rgb(53, 197, 240); width: 20px; height: 20px;">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z">
+                                        </path>
+                                    </svg>
+                                    <strong class="cell">4.6</strong>
+                                    <div class="review cell">리뷰 2,103</div>
+                                </div>
+                                <div class="product_item_info_3 row">
+                                    <div class="text_1 cell">무료배송</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="hot_product_box_wrap">
+                        <a href="#">
+                            <div class="img-box"><img src="images/hot_product_8.jpg" alt=""></div>
+                            <div class="product_item_box">
+                                <p class="product_item">모나코올리브</p>
+                                <p class="content">2+1 먼지날림없는 빗자루 매직비</p>
+                                <div class="product_item_info_1">
+                                    <span class="discount_rate">25%</span>
+                                    <strong>5,900</strong>
+                                </div>
+                                <div class="product_item_info_2 row">
+                                    <svg class="cell" width="24" height="24" viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        style="color: rgb(53, 197, 240); width: 20px; height: 20px;">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z">
+                                        </path>
+                                    </svg>
+                                    <strong class="cell">4.5</strong>
+                                    <div class="review cell">리뷰 390</div>
+                                </div>
+                                <div class="product_item_info_3 row">
+                                    <div class="text_1 cell">무료배송</div>
+                                    <div class="text_2 cell">최저가</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="hot_product_box_wrap">
+                        <a href="#">
+                            <div class="img-box"><img src="images/hot_product_9.jpg" alt=""></div>
+                            <div class="product_item_box">
+                                <p class="product_item">네이쳐리빙</p>
+                                <p class="content">미세먼지 털어주는 먼지털이개_7Size</p>
+                                <div class="product_item_info_1">
+                                    <span class="discount_rate">51%</span>
+                                    <strong>4,900</strong>
+                                </div>
+                                <div class="product_item_info_2 row">
+                                    <svg class="cell" width="24" height="24" viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        style="color: rgb(53, 197, 240); width: 20px; height: 20px;">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z">
+                                        </path>
+                                    </svg>
+                                    <strong class="cell">4.5</strong>
+                                    <div class="review cell">리뷰 3,409</div>
+                                </div>
+                                <div class="product_item_info_3 row">
+                                    <div class="text_1 cell">무료배송</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="hot_product_box_wrap">
+                        <a href="#">
+                            <div class="img-box"><img src="images/hot_product_10.jpg" alt=""></div>
+                            <div class="product_item_box">
+                                <p class="product_item">베스트리빙</p>
+                                <p class="content">[땡처리]규조토 발매트(M/L)</p>
+                                <div class="product_item_info_1">
+                                    <span class="discount_rate">47%</span>
+                                    <strong>9,500</strong>
+                                </div>
+                                <div class="product_item_info_2 row">
+                                    <svg class="cell" width="24" height="24" viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        style="color: rgb(53, 197, 240); width: 20px; height: 20px;">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z">
+                                        </path>
+                                    </svg>
+                                    <strong class="cell">4.7</strong>
+                                    <div class="review cell">리뷰 962</div>
+                                </div>
+                                <div class="product_item_info_3 row">
+                                    <div class="text_1 cell">무료배송</div>
+                                    <div class="text_2 cell">최저가</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="hot_product_box_wrap">
+                        <a href="#">
+                            <div class="img-box"><img src="images/hot_product_11.jpg" alt=""></div>
+                            <div class="product_item_box">
+                                <p class="product_item">무디스워크</p>
+                                <p class="content">(4/29출고)칫솔걸이 칫솔꽂이 양치컵 세트2size</p>
+                                <div class="product_item_info_1">
+                                    <span class="discount_rate">43%</span>
+                                    <strong>8,500</strong>
+                                </div>
+                                <div class="product_item_info_2 row">
+                                    <svg class="cell" width="24" height="24" viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        style="color: rgb(53, 197, 240); width: 20px; height: 20px;">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z">
+                                        </path>
+                                    </svg>
+                                    <strong class="cell">4.6</strong>
+                                    <div class="review cell">리뷰 49</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="hot_product_box_wrap">
+                        <a href="#">
+                            <div class="img-box"><img src="images/hot_product_12.jpg" alt=""></div>
+                            <div class="product_item_box">
+                                <p class="product_item">세레스홈</p>
+                                <p class="content">규조토 욕실용품 모음전</p>
+                                <div class="product_item_info_1">
+                                    <span class="discount_rate">56%</span>
+                                    <strong>2,000</strong>
+                                </div>
+                                <div class="product_item_info_2 row">
+                                    <svg class="cell" width="24" height="24" viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        style="color: rgb(53, 197, 240); width: 20px; height: 20px;">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z">
+                                        </path>
+                                    </svg>
+                                    <strong class="cell">4.3</strong>
+                                    <div class="review cell">리뷰 1,481</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer_box con row">
+            <a href="#" class="cell block">고객센터 ></a>
+            <ul class="sns_box row cell-right">
+                <li><a href="#" class="block cell"></a></li>
+                <li><a href="#" class="block cell"></a></li>
+                <li><a href="#" class="block cell"></a></li>
+                <li><a href="#" class="block cell"></a></li>
+                <li><a href="#" class="block cell"></a></li>
+                <li><a href="#" class="block cell"></a></li>
+            </ul>
+        </div>
+        <div class="phone_number con"><a href="#">1670-0876</a>
+            <p>평일 10:00~17:00 (점심시간 12:00~13:00 / 주말&공휴일 제외)</p>
+        </div>
+        <div class="sns_box row con">
+            <a href="#" class="block cell"></a>
+            <a href="#" class="block cell"></a>
+            <a href="#" class="block cell"></a>
+            <a href="#" class="block cell"></a>
+            <a href="#" class="block cell"></a>
+            <a href="#" class="block cell"></a>
+        </div>
+        <div class="footer_box_1 con row">
+            <a href="#" class="cell">서비스소개</a>
+            <a href="#" class="cell">회사소개</a>
+            <a href="#" class="cell">채용정보</a>
+            <a href="#" class="cell">이용약관</a>
+            <a href="#" class="cell">개인정보취급방침</a>
+            <a href="#" class="cell">고객센터</a>
+            <a href="#" class="cell">고객의 소리</a>
+            <a href="#" class="cell">전문가 등록</a>
+            <a href="#" class="cell">사업자 구매회원</a>
+            <a href="#" class="cell">제휴/광고 문의</a>
+            <a href="#" class="cell">입점신청 문의</a>
+        </div>
+        <div class="footer_box_2 con row relative">
+            <p><a href="#">상호명 : (주)버킷플레이스</a>
+                <a href="#">이메일 : contact@bucketplace.net</a>
+                대표이사 : 이승재
+                사업자등록번호 : 119-86-91245
+                통신판매업신고번호 : 제2018-서울서초-0580호
+                주소 : 서울특별시 서초구 강남대로 373 홍우빌딩 14층 버킷플레이스</p>
+            <p class="footer_nice cell">NICEPAY 안전거래 서비스 : 고객님의 안전거래를 위해 현금 결제 시, 저희 사이트에서 가입한 구매안전 서비스를 이용할 수 있습니다.
+            </p>
+            <p><a href="#" class="cell"> 가입확인</a></p>
+        </div>
+        <div class="footer_copy con">Copyright © 2014 by Bucketplace Inc All Rights Reserved</div>
+    </footer>
+
+    <script src="sub1.js"></script>
+</body>
+
+</html>
