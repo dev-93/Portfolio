@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TOM N TOMS</title>
+	<!-- 모바일에서 화면배율을 디바이스 크기 기준으로 설정 -->
+	<!-- 이게 안되면 pc에서의 100px과 모바일에서의 100px이 디바이스 성능에 따라 달라집니다. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS 불러오기 -->
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="index.css">
+	<!-- 제이쿼리 불러오기 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- owl 캐러셀 불러오기 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+	<!-- 폰트어썸 불러오기 -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="head_wrap">
+			<div class="main_menu_con con relative">
+				<a href="./index.html" class="logo absolute block">
+					<div class="img-box"><img src="images/index_logo.gif" alt=""></div>
+				</a>
+				<div class="main_menu row">
+					<ul class="row cell">
+						<li class="cell num1">
+							<a href="#">MENU</a>
+						</li>
+						<li class="cell num2">
+							<a href="#">EVENT</a>
+						</li>
+						<li class="cell num3">
+							<a href="#">STORE</a>
+						</li>
+						<li class="cell num4">
+							<a href="#">SERVICE</a>
+						</li>
+						<li class="cell num5">
+							<a href="#">COMMUNITY</a>
+						</li>
+						<li class="cell num6">
+							<a href="#">TOM N TOMS</a>
+						</li>
+					</ul>
+				</div>
+				<div class="right_menu absolute-right absolute-top">
+					<ul class="row">
+						<li class="cell"><a href="#">HOME</a></li>
+						<li class="cell"><a href="#">매장찾기</a></li>
+						<li class="cell">
+							<a href="#"><img src="images/icon_cart.gif" alt="">탐앤탐스몰</a>
+						</li>
+						<li class="cell">
+							<select name="favor_food">
+								<option value="">LANGUAGE</option>
+								<option value="">ENGLISH</option>
+								<option value="">CHINESE</option>
+								<option value="">MONGOLIA</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="sub_menu">
+				<div class="sub_menu_wrap con relative">
+					<div class="sub_menu_con absolute row con">
+						<ul class="cell gnb_01">
+							<li><a href="#">탐탐 신메뉴</a></li>
+							<li><a href="#">탐탐 추천메뉴</a></li>
+							<li><a href="#">탐탐 메뉴찾기</a></li>
+						</ul>
+						<ul class="cell gnb_02">
+							<li><a href="#">탐탐 진행중 이벤트</a></li>
+							<li><a href="#">탐탐 매장별 이벤트</a></li>
+							<li><a href="#">탐탐 종료된 이벤트</a></li>
+							<li><a href="#">탐탐 공모전</a></li>
+						</ul>
+						<ul class="cell gnb_03">
+							<li><a href="#">탐탐 국내매장찾기</a></li>
+							<li><a href="#">탐탐 글로벌매장찾기</a></li>
+							<li><a href="#">탐탐 신규매장소개</a></li>
+						</ul>
+						<ul class="cell gnb_04">
+							<li><a href="#">프렌차이즈</a></li>
+							<li><a href="#">탐탐 마이탐 멤버스</a></li>
+							<li><a href="#">제휴할인/기프트카드</a></li>
+							<li><a href="#">탐탐 렌탈서비스</a></li>
+							<li><a href="#">푸드트럭/케이터링</a></li>
+							<li><a href="#">탐스 라이프 스토어</a></li>
+							<li><a href="#">아카데미</a></li>
+						</ul>
+						<ul class="cell gnb_05">
+							<li><a href="#">탐탐소식</a></li>
+							<li><a href="#">예술문화 후원활동</a></li>
+							<li><a href="#">사회복지 후원활동</a></li>
+							<li><a href="#">소셜 탐탐</a></li>
+							<li><a href="#">탐탐 고객만족센터</a></li>
+						</ul>
+						<ul class="cell gnb_06">
+							<li><a href="#">브랜드소개</a></li>
+							<li><a href="#">회사소개</a></li>
+							<li><a href="#">채용안내</a></li>
+							<li><a href="#">찾아오시는 길</a></li>
+						</ul>
+					</div>
+					
+					<div class="bg_top absolute"></div>
+				</div>
+			</div>
+			
+			<div class="mb_menu row relative">
+				<a href="./index.html" class="logo cell block">
+					<div class="img-box"><img src="images/index_logo.gif" alt=""></div>
+				</a>
+				<div class="mb_right cell-right row">
+					<ul>
+						<li class="cell">
+							<a href="#" class="cart block"><img src="images/mb_menu_cart.gif" alt=""></a>
+							<a href="#" class="text block">탐앤탐스 몰</a>
+						</li>
+						<li class="cell">
+							<a href="#" class="ham active"><img src="images/mb_menu_hamburger.gif" alt=""></a>
+						</li>
+					</ul>
+				</div>
+				<div class="mb_menu_bar">
+					<ul>
+						<li class="row">
+							<a href="#" class="row">
+								<div class="content cell">MENU</div>
+								<img src="images/arrow_down.png" alt="" class="cell-right"></a>
+							<ul>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">탐탐 신메뉴</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">탐탐 추천메뉴</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">탐탐 메뉴찾기</div>
+									</a></li>
+							</ul>
+						</li>
+						<li class="row">
+							<a href="#" class="row">
+								<div class="content cell">EVENT</div>
+								<img src="images/arrow_down.png" alt="" class="cell-right"></a>
+							<ul>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">탐탐 진행중 이벤트</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">탐탐 매장별 이벤트</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">탐탐 종료된 이벤트</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">탐탐 공모전</div>
+									</a></li>
+							</ul>
+						</li>
+						<li class="row">
+							<a href="#" class="row">
+								<div class="content cell">STORE</div>
+								<img src="images/arrow_down.png" alt="" class="cell-right"></a>
+							<ul>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">탐탐 국내매장찾기</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">탐탐 글로벌매장찾기</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">탐탐 신규매장소개</div>
+									</a></li>
+							</ul>
+						</li>
+						<li class="row">
+							<a href="#" class="row">
+								<div class="content cell">SERVICE</div>
+								<img src="images/arrow_down.png" alt="" class="cell-right"></a>
+							<ul>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">프렌차이즈</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">탐탐 마이탐 멤버스</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">제휴할인/기프트카드</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">탐탐 렌탈서비스</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">푸드트럭/케이터링서비스</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">탐스 라이프 스토어</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">아카데미</div>
+									</a></li>
+							</ul>
+						</li>
+						<li class="row">
+							<a href="#" class="row">
+								<div class="content cell">COMMUNITY</div>
+								<img src="images/arrow_down.png" alt="" class="cell-right"></a>
+							<ul>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">탐탐 소식</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">예술문화 후원활동</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">사회복지 후원활동</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">소셜 탐탐</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">탐탐 고객만족센터</div>
+									</a></li>
+							</ul>
+						</li>
+						<li class="row">
+							<a href="#" class="row">
+								<div class="content cell">TOM N TOMS</div>
+								<img src="images/arrow_down.png" alt="" class="cell-right"></a>
+							<ul>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">브랜드 소개</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">회사소개</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">채용안내</div>
+									</a></li>
+								<li class="relative"><a href="#">
+										<img class="absolute-middle" src="images/point_2.gif" alt="">
+										<div class="content">찾아오시는 길</div>
+									</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="my-1-box-wrap" style="background-image:url(https://www.tomntoms.com/uploadimg/0.27285900_1556625254.jpg);">
+			<div class="my-1-box con">
+				<div class="my-1 owl-carousel owl-theme">
+					<div class="item" style="background-image:url(https://www.tomntoms.com/uploadimg/0.27285900_1556625254.jpg);"></div>
+					<div class="item" style="background-image:url(https://www.tomntoms.com/uploadimg/0.80484500_1552532536.jpg);"></div>
+					<div class="item" style="background-image:url(https://www.tomntoms.com/uploadimg/0.66600300_1556622803.jpg);"></div><div class="item" style="background-image:url(https://www.tomntoms.com/uploadimg/0.16032600_1554344571.jpg);"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="my-box-2">
+				<ul class="owl-carousel owl-theme">
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_main_banner_1.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_main_banner_2.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_main_banner_3.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_main_banner_4.jpg" alt=""></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		
+		
+		
+		<div class="section_mid_1 row con">
+			<div class="new_menu cell">
+				<h2>탐탐 새소식</h2>
+				<ul class="owl-carousel owl-theme">
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_left_side_img1.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_left_side_img2.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_left_side_img3.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_left_side_img4.jpg" alt=""></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="find_store cell-right">
+				<div class="store_search row relative">
+					<h2 class="cell">탐탐 매장찾기</h2>
+					<span class="cell absolute">
+						<label for="devide1">전체매장</label>
+						<input type="radio" id="devide1" value checked="checked" name="type">
+						<label for="devide2">직영점</label>
+						<input type="radio" id="devide2" name="type">
+						<label for="devide3">가맹점</label>
+						<input type="radio" id="devide3" name="type">
+					</span>
+				</div>
+				<input placeholder="찾고자하는 매장명을 입력하세요">
+				<div class="small_box row">
+					<div class="left_box cell">
+						<h3>신규매장</h3>
+						<ul class="owl-carousel owl-theme">
+							<li class="item">
+								<a href="#">
+									<div class="img-box"><img src="images/index_small_left_1.jpg" alt=""></div>
+									<div class="content">세종특별자치시 l 어반아트리움 더센트럴점 l 04월 27일</div>
+								</a>
+							</li>
+							<li class="item">
+								<a href="#">
+									<div class="img-box"><img src="images/index_small_left_2.jpg" alt=""></div>
+									<div class="content">필리핀 l Zamboanga l 04월13일</div>
+								</a>
+							</li>
+							<li class="item">
+								<a href="#">
+									<div class="img-box"><img src="images/index_small_left_3.jpg" alt=""></div>
+									<div class="content">몽골 l HUNNU MALL l 04월 13일</div>
+								</a>
+							</li>
+							<li class="item">
+								<a href="#">
+									<div class="img-box"><img src="images/index_small_left_4.jpg" alt=""></div>
+									<div class="content">경기도 l 야당역점 l 04월 04일</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="right_box cell">
+						<h3>Enjoy TOMTOM</h3>
+						<div class="img_con con row">
+							<ul>
+								<li class="cell">
+								<a href="#">
+									<div class="img-box"><img src="images/index_small_right_1.gif" alt=""></div>
+									<div class="content">이벤트</div>
+									</a>
+								</li>
+								<li class="cell">
+								<a href="#">
+									<div class="img-box"><img src="images/index_small_right_2.gif" alt=""></div>
+									<div class="content">탐스테이지</div>
+									</a>
+								</li>
+								<li class="cell">
+								<a href="#">
+									<div class="img-box"><img src="images/index_small_right_3.gif" alt=""></div>
+									<div class="content">갤러리탐</div>
+									</a>
+								</li>
+								<li class="cell">
+								<a href="#">
+									<div class="img-box"><img src="images/index_small_right_4.gif" alt=""></div>
+									<div class="content">탐시어터</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="section_mid_2">
+			<ul class="row con">
+				<li class="cell"><a href="#">
+						<div class="head">탐앤탐스</div>
+						<div class="img-box"><img src="images/index_section_mid_2_img_1.png" alt=""></div>
+						<div class="content">'토종커피의 자존심'<br>탐앤탐스 브랜드 스토리</div>
+					</a></li>
+				<li class="cell"><a href="#">
+						<div class="head">가맹문의</div>
+						<div class="img-box"><img src="images/index_section_mid_2_img_2.png" alt=""></div>
+						<div class="content">탐앤탐스 창업에 대한<br> 궁금증을 해결해 드립니다.</div>
+					</a></li>
+				<li class="cell"><a href="#">
+						<div class="head">마이탐 APP</div>
+						<div class="img-box"><img src="images/index_section_mid_2_img_3.png" alt=""></div>
+						<div class="content">공식 모바일 앱 마이탐에서 <br> 특별한 혜택을 제공합니다.</div>
+					</a></li>
+				<li class="cell"><a href="#">
+						<div class="head">TOMTOM SNS</div>
+						<div class="img-box"><img src="images/index_section_mid_2_img_box.gif" alt=""></div>
+						<div class="content"></div>
+					</a></li>
+			</ul>
+		</div>
+		
+		<div class="section_mid_3 row con">
+			<div class="tom_mall cell">
+				<a href="#"><h1>TOM N TOMS <em>MALL</em></h1></a>
+				<ul class="owl-carousel owl-theme">
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_tom_mall_img_1.jpg" alt=""></div>
+							<div class="content">탐앤탐스 쏘우 텀블러 500ml</div>
+							<div class="price">32,000원</div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_tom_mall_img_2.jpg" alt=""></div>
+							<div class="content">탐앤탐스 빠다커피</div>
+							<div class="price">3,800원</div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_tom_mall_img_3.jpg" alt=""></div>
+							<div class="content">탐앤탐스 에티오피아 예가체프 핸</div>
+							<div class="price">18,900원</div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_tom_mall_img_4.jpg" alt=""></div>
+							<div class="content">탐앤탐스 허니부쉬 500ml</div>
+							<div class="price">2,500원</div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_tom_mall_img_5.jpg" alt=""></div>
+							<div class="content">탐앤탐스 레몬머틀 500ml</div>
+							<div class="price">25,000원</div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_tom_mall_img_6.jpg" alt=""></div>
+							<div class="content">탐앤탐스 더블 콜드 텀블러</div>
+							<div class="price">11,000원</div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_tom_mall_img_7.jpg" alt=""></div>
+							<div class="content">탐앤탐스 짜먹는 깔라만시 곤약젤</div>
+							<div class="price">15,000원</div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_tom_mall_img_8.jpg" alt=""></div>
+							<div class="content">탐앤탐스 깔라만시톡스(파우치형.</div>
+							<div class="price">22,000원</div>
+						</a>
+					</li>
+					<li class="item">
+						<a href="#">
+							<div class="img-box"><img src="images/index_tom_mall_img_9.jpg" alt=""></div>
+							<div class="content">탐앤탐스 오늘 클렌즈(4종x2일, 8</div>
+							<div class="price">32,000원</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom_right_menu cell-right row">
+				<div class="main_bnr cell">
+					<ul>
+						<li><a href="#"><div class="img-box"><img src="images/index_bottom_img_1.jpg" alt=""></div></a></li>
+						<li><a href="#"><div class="img-box"><img src="images/index_bottom_img_2.jpg" alt=""></div></a></li>
+					</ul>
+				</div>
+				<div class="tom_notice cell">
+					<div class="notice_top row relative">	
+						<h2 class="cell">탐탐 공지사항</h2>
+						<a href="#"><div class="img-box absolute-middle absolute-right cell-right"><img src="images/index_plus.gif" alt=""></div></a>
+					</div>
+					<ul>
+						<li class="relative">
+							<a href="#"><img class="absolute-middle" src="images/point.gif" alt="">
+						&nbsp;&nbsp;[탐앤탐스] 마이탐 '스마트오더' 도입</a>
+							<span class="absolute-right absolute-middle">2019.02.20</span>
+						</li>
+						<li class="relative">
+							<a href="#"><img class="absolute-middle" src="images/point.gif" alt="">
+						&nbsp;&nbsp;[탐앤탐스] 일부 품목 가격 조정 안내</a>
+							<span class="absolute-right absolute-middle">2019.01.29</span>
+						</li>
+						<li class="relative">
+							<a href="#"><img class="absolute-middle" src="images/point.gif" alt="">
+						&nbsp;&nbsp;[탐앤탐스] 2019 설 선물세트 출시!</a>
+							<span class="absolute-right absolute-middle">2019.01.18</span>
+						</li>
+						<li class="relative">
+							<a href="#"><img class="absolute-middle" src="images/point.gif" alt="">
+						&nbsp;&nbsp;[마이탐] 더욱 새로워진 멤버십 서비스를 경험하세요!</a>
+							<span class="absolute-right absolute-middle">2019.01.02</span>
+						</li>
+						<li class="relative">
+							<a href="#"><img class="absolute-middle" src="images/point.gif" alt="">
+						&nbsp;&nbsp;[마이탐] 서비스 이용 관련 '주요 문의사항' 안내</a>
+							<span class="absolute-right absolute-middle">2018.11.21</span>
+						</li>
+						<li class="relative">
+							<a href="#"><img class="absolute-middle" src="images/point.gif" alt="">
+						&nbsp;&nbsp;[마이탐] 무료음료 쿠폰 이용가능 음료 안내(Tall)</a>
+							<span class="absolute-right absolute-middle">2018.11.21</span>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="site_map_wrap">
+			<ul class="row con">
+				<li class="cell relative">
+					<div class="img-box absoulte"><img src="images/index_site_map_img1.gif" alt=""></div>
+				</li>
+				<li class="cell">
+					<a href="#">
+						<div class="head">MENU</div></a>
+					<div class="content_box">
+						<a href="#">
+							<div class="content">탐탐 신메뉴</div>
+						</a>
+						<a href="#">
+							<div class="content">탐탐 추천메뉴</div>
+						</a>
+						<a href="#">
+							<div class="content">탐탐 메뉴찾기</div>
+						</a>
+					</div>
+				</li>
+				<li class="cell">
+					<a href="#">
+						<div class="head">EVENT</div></a>
+					<div class="content_box">
+						<a href="#">
+							<div class="content">탐탐 진행중인 이벤트</div>
+						</a>
+						<a href="#">
+							<div class="content">탐탐 매장별 이벤트</div>
+						</a>
+						<a href="#">
+							<div class="content">탐탐 종료된 이벤트</div>
+						</a>
+						<a href="#">
+							<div class="content">탐탐 공모전</div>
+						</a>
+					</div>
+				</li>
+				<li class="cell">
+					<a href="#">
+						<div class="head">STORE</div></a>
+					<div class="content_box">
+						<a href="#">
+							<div class="content">탐탐 국내매장찾기 </div>
+						</a>
+						<a href="#">
+							<div class="content">탐탐 글로벌매장찾기</div>
+						</a>
+						<a href="#">
+							<div class="content">탐탐 신규매장소개</div>
+						</a>
+					</div>
+				</li>
+				<li class="cell">
+					<a href="#">
+						<div class="head">SERVICE</div></a>
+					<div class="content_box">
+						<a href="#">
+							<div class="content">프랜차이즈</div>
+						</a>
+						<a href="#">
+							<div class="content">탐탐 마이탐 멤버스</div>
+						</a>
+						<a href="#">
+							<div class="content">제휴할인/기프트카드</div>
+						</a>
+						<a href="#">
+							<div class="content">탐탐 렌탈서비스</div>
+						</a>
+						<a href="#">
+							<div class="content">푸드트럭/케이터링서비스</div>
+						</a>
+						<a href="#">
+							<div class="content">탐스 라이프 스토어</div>
+						</a>
+						<a href="#">
+							<div class="content">아카데미</div>
+						</a>
+					</div>
+				</li>
+				<li class="cell">
+					<a href="#">
+						<div class="head">COMMUNITY</div></a>
+					<div class="content_box">
+						<a href="#">
+							<div class="content">탐탐 소식</div>
+						</a>
+						<a href="#">
+							<div class="content">예술문화 후원활동</div>
+						</a>
+						<a href="#">
+							<div class="content">사회복지 후원활동</div>
+						</a>
+						<a href="#">
+							<div class="content">소셜 탐탐</div>
+						</a>
+						<a href="#">
+							<div class="content">탐탐 고객만족센터</div>
+						</a>
+					</div>
+				</li>
+				<li class="cell">
+					<a href="#">
+						<div class="head">TOM N TOMS</div></a>
+					<div class="content_box">
+						<a href="#">
+							<div class="content">브랜드 소개</div>
+						</a>
+						<a href="#">
+							<div class="content">회사소개</div>
+						</a>
+						<a href="#">
+							<div class="content">채용안내</div>
+						</a>
+						<a href="#">
+							<div class="content">찾아오시는 길</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer_wrap">
+			<div class="footer_con row con relative">
+				<ul class="con cell row">
+					<li class="cell"><a href="#">회사소개</a></li>
+					<li class="cell"><a href="#">채용안내</a></li>
+					<li class="cell"><a href="#">프랜차이즈</a></li>
+				</ul>
+				<ul class="con cell row">
+					<li class="cell"><a href="#">계열사소개</a></li>
+					<li class="cell"><a href="#">공지사항</a></li>
+					<li class="cell"><a href="#">고객만족센터</a></li>
+					<li class="cell"><a href="#">찾아오시는길</a></li>
+				</ul>
+				<div class="absolute-right absolute-top"><a href="#" class="logo_top"><div class="img-box"><img src="images/footer_top_img.gif" alt=""></div></a></div>
+			</div>
+		</div>
+		<div class="footer_wrap_2">
+			<div class="footer_con_2 row con">
+				<div class="img-box cell"><img src="images/footer_bottom_logo_img.gif" alt=""></div>
+				<div class="addr_box cell">
+					<p class="addr">
+						<span>서울특별시 강남구 논현로 163길 10 베드로빌딩 2F (구 : 신사동 570-6) </span>
+						<span>대표 : 김도균</span>
+						<span>사업자등록번호 : 215-86-65050</span>
+						<span>Tel. 02-3412-0781</span>
+						<span>Fax. 02-3412-1907</span>
+					</p>
+					<p class="copyright">COPYRIGHT (c) 2015 TOM N TOMS COFFEE. ALL RIGHTS RESERVED.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="index.js"></script>
+</body>
+</html>
