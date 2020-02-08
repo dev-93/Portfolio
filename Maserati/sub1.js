@@ -1,0 +1,32 @@
+$('.my-1').owlCarousel({
+    autoplay:true,
+    autoplayTimeout:500,
+    autoplayHoverPause:true,
+    loop:true,
+    margin:0,
+    nav:true,
+    navText:['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+    responsive:{
+        0:{
+            items:1
+        }
+    }
+})
+/*
+$('.carousel_2').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        900:{
+            items:4
+        }
+    }
+})
+*/
