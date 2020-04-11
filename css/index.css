@@ -283,12 +283,25 @@
 	padding: 20px 30px;
 }
 
-.skill-menu li img {
-	width: 70%;
+.skill-menu li figure {
+	height: 170px;
+	position: relative;
+}
+
+.skill-menu li figure img {
+	width: 200px;
 	cursor: pointer;
+	transition: transform .2s;
 	display: block;
 	margin: 0 auto;
-	transition: transform .2s;
+}
+
+.skill-menu li.git figure img {
+	width: 100%;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
 }
 
 .skill-menu li h3,
@@ -327,7 +340,7 @@
 .skill>div {
 	height: 30px;
 	border-radius: 10px;
-	border: 1px solid black;
+	border: 1px solid gray;
 	position: relative;
 	overflow: hidden;
 }
@@ -766,10 +779,6 @@ footer>.copy-box p {
 
 	.skill-menu li {
 		width: calc(100% / 2);
-	}
-
-	.skill-menu li img {
-		width: 60%;
 	}
 
 	.skill-menu li .text_box {
