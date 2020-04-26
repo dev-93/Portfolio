@@ -1,0 +1,34 @@
+.wrap_port {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0 80px;
+
+  ul {
+    width: 100%;
+    margin-top: 180px;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      width: 20%;
+      height: 390px;
+      background-color: pink;
+      margin-right: 6.666%;
+      margin-bottom: 6.666%;
+      margin-top: 6.666%;
+
+      &:nth-child(1), &:nth-child(3) {
+        margin-top: 0;
+      }
+    
+      &:nth-child(4n+1), &:nth-child(4n+3) {
+          margin-top: -6.6666%;
+      }
+
+      &:nth-child(4n+4) {
+        margin-right: 0;
+      }
+
+    }
+  }
+}

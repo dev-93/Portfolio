@@ -1,0 +1,25 @@
+.App-header {
+  background-color: white;
+  height: 80px;
+  box-sizing: border-box;
+  display: flex;
+  color: black;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+
+  figure {
+    background-color: blueviolet;
+    width: 100px;
+  }
+
+  ul {
+    background-color: tomato;
+    display: flex;
+
+    li {
+      padding: 0 10px;
+      align-self: center;
+    }
+  }
+}
