@@ -1,7 +1,13 @@
 .wrap_port {
-  width: 100vw;
+  width: 100%;
   box-sizing: border-box;
   padding: 0 80px;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+  
+  &::-webkit-scrollbar {
+    width: 0 !important ;
+  }
 
   ul {
     width: 100%;
@@ -15,7 +21,6 @@
       background-color: pink;
       margin-right: 6.666%;
       margin-bottom: 6.666%;
-      margin-top: 6.666%;
 
       &:nth-child(1), &:nth-child(3) {
         margin-top: 0;
