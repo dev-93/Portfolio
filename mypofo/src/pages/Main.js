@@ -5,8 +5,10 @@ const Main = () => {
   return (
     <div className="main">
       <div className="container">
-        <div className="content"></div>
+        <div className="content one"></div>
         <div className="content two"></div>
+        <div className="content third"></div>
+        <div className="content fourth"></div>
       </div>
     </div>
   );
