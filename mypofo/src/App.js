@@ -1,13 +1,24 @@
 import React, {useState} from 'react';
-import Portfolio from "./pages/Portfolio"
-import Nav from "./pages/Nav"
+import Portfolio from "./pages/Portfolio";
+import Nav from "./components/Nav";
+import Main from "./pages/Main";
 import './App.scss';
 
 function App() {
+  const [isUpload, setUpload] = useState(false);
+
+  const show = () => {
+    setUpload(true);
+  }
   return (
-    <div className="App">
-      <Nav />
-    </div>
+    <>
+      <Main />
+      <div>
+        {
+          isUpload && <Nav />
+        }
+      </div>
+    </>
   );
 }
 

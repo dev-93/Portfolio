@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Portfolio from "./Portfolio"
+import Portfolio from "../pages/Portfolio"
 import "./nav.scss"
 
 const Nav = () => {
