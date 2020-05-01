@@ -1,0 +1,19 @@
+.timeline {
+  background-color: darkcyan;
+  height: calc(100vh - 80px);
+  box-sizing: border-box;
+  color: black;
+  padding: 0 80px;
+  display: flex;
+  overflow: scroll;
+  
+  &::-webkit-scrollbar {
+    width: 0 !important ;
+  }
+}
+
+@media (max-width:768px) {
+  .timeline {
+    padding: 0 10px;
+  }
+}
