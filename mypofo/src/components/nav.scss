@@ -1,16 +1,23 @@
 .App-header {
+  display: flex;
   background-color: white;
   height: 80px;
   box-sizing: border-box;
-  display: flex;
   color: black;
   padding: 0 80px;
-  display: flex;
+  width:100%;
   justify-content: space-between;
 
   figure {
     background-color: blueviolet;
     width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      color:white;
+    }
   }
 
   ul {
@@ -21,5 +28,12 @@
       padding: 0 10px;
       align-self: center;
     }
+  }
+}
+
+@media (max-width:768px) {
+  .App-header {
+    height:60px;
+    padding: 0 10px;
   }
 }

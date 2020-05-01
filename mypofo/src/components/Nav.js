@@ -1,59 +1,28 @@
-import React, {useState} from 'react';
-import Portfolio from "../pages/Portfolio"
+import React from 'react';
 import "./nav.scss"
 
-const Nav = () => {
-  const [isAbout, setAbout] = useState(false);
-  const [isPortfolio, setPortfolio] = useState(false);
-  const [isThink, setThink] = useState(false);
- 
-  const About = () => {
-    setAbout(true);
-    setPortfolio(false);
-    setThink(false);
-  }
-
-  const Port = () => {
-    setAbout(false);
-    setPortfolio(true);
-    setThink(false);
-  }
-
-  const Think = () => {
-    setAbout(false);
-    setPortfolio(false);
-    setThink(true);
-  }
+const Nav = (props) => {
 
   return (
     <>
       <header className="App-header">
         <figure>
-          TN
+          <span>TN</span>
         </figure>
         <ul>
           <li>
-            <button type="button" onClick={About}>About</button>
+            <button type="button" onClick={props.about}>About</button>
           </li>
 
           <li>
-            <button type="button" onClick={Port}>Portfolio</button>
+            <button type="button" onClick={props.port}>Portfolio</button>
           </li>
 
           <li>
-            <button type="button" onClick={Think}>Think</button>
+            <button type="button" onClick={props.think}>Think</button>
           </li>
         </ul>
       </header>
-      {
-        isAbout && <h1>렌더링 테스트</h1>
-      }
-      {
-        isPortfolio && <Portfolio />
-      }
-      {
-        isThink && <h1>테스트 중</h1>        
-      }
     </>
   );
 }
