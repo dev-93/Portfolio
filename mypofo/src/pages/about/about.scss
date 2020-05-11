@@ -1,5 +1,4 @@
 .about {
-  background-color: greenyellow;
   height: calc(100vh - 80px);
   box-sizing: border-box;
   color: black;
@@ -9,6 +8,16 @@
   
   &::-webkit-scrollbar {
     width: 0 !important ;
+  }
+
+  .wrapper {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    width:100vw;
+    height:100vh;
+    background: url("../img/about-background.jpg");
   }
 }
 
