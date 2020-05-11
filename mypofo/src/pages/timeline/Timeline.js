@@ -5,7 +5,9 @@ const Timeline = () => {
   return (
     <>
       <div className="timeline">
-        zz
+        <div className="wrapper">
+          
+        </div>
       </div>
     </>
   );
