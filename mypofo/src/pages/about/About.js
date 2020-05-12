@@ -6,7 +6,9 @@ const About = () => {
     <>
       <div className="about">
         <div className="wrapper">
-
+          <div className="card">
+            
+          </div>
         </div>
       </div>
     </>
