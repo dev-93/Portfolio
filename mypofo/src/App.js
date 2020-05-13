@@ -9,38 +9,25 @@ import './App.scss';
 function App() {
   const [isMain, setMain] = useState(true);
   const [isUpload, setUpload] = useState(false);
-  const [isAbout, setAbout] = useState(false);
-  const [isPortfolio, setPortfolio] = useState(false);
-  const [isThink, setThink] = useState(false);
+  const [comp, setComp] = useState(About);
  
   window.onload = function(){ 
     setTimeout(function() {
       setMain(false);
       setUpload(true);
-      setAbout(true);
-      console.log(100);
     }, 5000);
   }
   
   const about = () => {
-    setAbout(true);
-    setPortfolio(false);
-    setThink(false);
-    console.log(200);
+    setComp(About);
   }
 
   const port = () => {
-    setAbout(false);
-    setPortfolio(true);
-    setThink(false);
-    console.log(300);
+    setComp(Portfolio);
   }
 
   const think = () => {
-    setAbout(false);
-    setPortfolio(false);
-    setThink(true);
-    console.log(400);
+    setComp(Timeline);
   }
 
   return (
@@ -59,13 +46,7 @@ function App() {
           ) 
         }
         {
-          isAbout && <About />
-        }
-        {
-          isPortfolio && <Portfolio />
-        }
-        {
-          isThink && <Timeline />
+          isUpload && <main children={comp} />
         }
       </div>
     </>
