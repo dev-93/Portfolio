@@ -7,8 +7,8 @@ import Main from "./pages/main/Main";
 import './App.scss';
 
 function App() {
-  const [isMain, setMain] = useState(true);
-  const [isUpload, setUpload] = useState(false);
+  const [isMain, setMain] = useState(false);
+  const [isUpload, setUpload] = useState(true);
   const [comp, setComp] = useState(About);
  
   window.onload = function(){ 
