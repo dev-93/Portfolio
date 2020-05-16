@@ -1,10 +1,30 @@
 import React, { useState } from 'react';
 import "./chatbot.scss"
+import chatList from "./chatList";
 
 const Chatbot = () => {
   const [isOpen, setOpen] = useState(false);
 
   const TextBox = () => {
+
+    // const ChatBox = () => {
+    //   return(
+    //     <>
+    //       <div className="text_box">
+    //         {chatList.map((list) => {
+    //           return (
+    //             <>
+    //               <div className="question">{list.question}</div>
+    //               <ul className="answer">
+    //                 <li><button>{list.answers}</button></li>
+    //               </ul>
+    //             </>
+    //           );
+    //         })}
+    //       </div>
+    //     </>
+    //   );
+    // }
     return(
       <>
         <div className="detail_box">
@@ -16,17 +36,21 @@ const Chatbot = () => {
             <div className="our">
               <div className="robot">
                 <figure>
-                  <img src={require("../components/chatbot.PNG")} alt="robot image" /> 
+                  <img src={require("./chatbot.PNG")} alt="robot" /> 
                 </figure>
                 <p>robot</p>
               </div>
               <div className="text_box">
-                <div className="question">어떻게 오게되셨나요?</div>
-                <ul className="answer">
-                  <li><button>인재채용</button></li>
-                  <li><button>심심해서 구경</button></li>
-                  <li><button>지인소개</button></li>
-                </ul>
+                {chatList.map((list) => {
+                  return (
+                    <>
+                      <div className="question">{list.question}</div>
+                      <ul className="answer">
+                        <li><button>{list.answers}</button></li>
+                      </ul>
+                    </>
+                  );
+                })}
               </div>
             </div>
           </div>

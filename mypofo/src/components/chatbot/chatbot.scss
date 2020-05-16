@@ -40,7 +40,7 @@
       height: 100px;
       background-color: rgba(149, 177, 190, 0.432);
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
 
       p {
         color:white;
@@ -50,12 +50,13 @@
     }
 
     .title .close {
-      position: absolute;
-      right: 20px;
-      top: 10px;
+      align-self: center;
       color: white;
-      font-size:30px;
-      transition: all .3s ease-in-out;
+      font-size:25px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid white;
     }
 
     .contents{
