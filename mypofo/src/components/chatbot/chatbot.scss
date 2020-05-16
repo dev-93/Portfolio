@@ -1,0 +1,116 @@
+.wrap_chatbot {
+  .container {
+    position: fixed;
+    z-index: 10;
+    bottom: 5vh;
+    right: 2vw;
+    width: 400px;
+    height: 800px;
+  }
+
+  .plus {
+    position: absolute;
+    bottom: 5vh;
+    right: 0;
+    color: white;
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+    background-color:gray;
+    border-radius: 50%;
+    transition: all .8s;
+
+    &:hover {
+      transform: rotate(180deg);
+    }
+  }
+
+  .detail_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-color: rgb(84, 128, 194);
+    border-radius: 20px;
+    overflow: hidden;
+
+    .title{
+      width:100%;
+      height: 100px;
+      background-color: rgba(149, 177, 190, 0.432);
+      display: flex;
+      justify-content: center;
+
+      p {
+        color:white;
+        font-size:20px;
+        align-self: center;
+      }
+    }
+
+    .title .close {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      color: white;
+      font-size:30px;
+      transition: all .3s ease-in-out;
+    }
+
+    .contents{
+      width:100%;
+      height: 100%;
+      background-color: white;
+      padding: 30px 20px;
+    }
+
+    .contents .our {
+      width:320px;
+      border-radius: 5px;
+    }
+
+    .contents .our .robot {
+      display:flex;
+    }
+
+    .contents .our .robot figure img {
+      width:50px;
+    }
+
+    .contents .our .robot p {
+      align-self: center;
+      margin-left: 15px;
+    }
+
+    .contents .our .text_box {
+      background-color: rgb(83, 97, 116);
+      border-radius: 10px;
+      border-top-left-radius: 0;
+      margin-top:20px;
+      padding: 20px 5px;
+    }
+
+    .contents .our .question{
+      margin-left: 10px;
+      color:white;
+    }
+
+    .contents .our .answer{
+      display:flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+
+    .contents .our .answer li{
+      border: 2px solid white;
+      border-radius: 10px;
+      margin: 3px;
+      padding: 5px 0;
+    }
+    .contents .our .answer li button {
+      color:white;
+    }
+  }
+}
