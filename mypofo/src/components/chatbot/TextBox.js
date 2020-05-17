@@ -3,7 +3,6 @@ import chatList from "./chatList";
 import "./textbox.scss"
 
 const Textbox = (props) => {
-  const [textBt, setTextBt] = useState(true);
   
   return (
     <>
@@ -14,28 +13,28 @@ const Textbox = (props) => {
             <button type="button" 
               onClick={()=>{
                 props.setAnswer(true)
-                setTextBt(false)
+                props.setTextBt(false)
                 }}>{chatList[props.num].answers.fir}</button>
           </li>
           <li>
             <button type="button" 
               onClick={()=>{
                 props.setAnswer(true)
-                setTextBt(false)
+                props.setTextBt(false)
                 }}>{chatList[props.num].answers.sec}</button>
           </li>
           <li>
             <button type="button" 
               onClick={()=>{
                 props.setAnswer(true)
-                setTextBt(false)
+                props.setTextBt(false)
                 }}>{chatList[props.num].answers.thi}</button>
           </li>
         </ul>
       </div>
 
       {
-        textBt && 
+        props.textBt && 
         <div className="bt_box">
           <button type="button" className="prev" onClick={()=>{props.setRecruit(false)}}>뒤로 돌아가기</button>    
         </div>

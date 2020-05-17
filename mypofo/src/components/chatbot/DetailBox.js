@@ -7,6 +7,7 @@ import "./detailbox.scss";
 const DetailBox = (props) => {
   const [recruit, setRecruit] = useState(false);
   const [answer, setAnswer] = useState(false);
+  const [textBt, setTextBt] = useState(true);
   
   return(
     <>
@@ -43,6 +44,8 @@ const DetailBox = (props) => {
                   <TextBox 
                     setAnswer={setAnswer}
                     setRecruit={setRecruit}
+                    setTextBt={setTextBt}
+                    textBt={textBt}
                     num={1}
                   />) || 
               (
@@ -50,6 +53,8 @@ const DetailBox = (props) => {
                   <TextBox 
                     setAnswer={setAnswer}
                     setRecruit={setRecruit}
+                    setTextBt={setTextBt}
+                    textBt={textBt}
                     num={2}
                   />
               ) || (
@@ -57,12 +62,20 @@ const DetailBox = (props) => {
                   <TextBox 
                     setAnswer={setAnswer}
                     setRecruit={setRecruit}
+                    setTextBt={setTextBt}
+                    textBt={textBt}
                     num={3}
                   />
               )
             }
             {
-              answer && <Answerbox />
+              answer && 
+                <Answerbox
+                  setAnswer={setAnswer} 
+                  setRecruit={setRecruit}
+                  setTextBt={setTextBt}
+                  textBt={textBt}
+                />
             }
           </div>
         </div>
