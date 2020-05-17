@@ -1,5 +1,6 @@
 import React from 'react';
-import "./about.scss"
+import "./about.scss";
+import Chatbot from "../../components/chatbot/ChatBot";
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
       <div className="about">
         <div className="wrapper">
           <div className="card info">
-            <div className="me">Great Partner</div>
+            <div className="me">Kim taenam</div>
             <div className="occupation">Front-End Developer</div>
             <div className="details">
               <div className="container">
@@ -20,13 +21,33 @@ const About = () => {
           </div>
       
           <div className="card skill">
-            <div>html / css</div>
-            <div>Javascript / React / Jquery</div>
-            <div>TypeScript</div>
-            <div>Git / GitHub</div>
+            <div className="container">
+              <figure>
+                <img src={require("../img/css.png")} alt="css"/>
+              </figure>
+              <figure>
+                <img src={require("../img/html.png")} alt="html"/>
+              </figure>
+              <figure>
+                <img src={require("../img/javascript.png")} alt="js"/>
+              </figure>
+            </div>
+            <div className="container">
+              <figure>
+                <img src={require("../img/react.png")} alt="react"/>
+              </figure>
+              <figure>
+                <img src={require("../img/git.png")} alt="git"/>
+              </figure>
+              <figure>
+                <img src={require("../img/github.png")} alt="github"/>
+              </figure>
+            </div>
           </div>
         </div>
       </div>
+
+      <Chatbot />
     </>
   );
 }
