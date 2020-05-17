@@ -1,0 +1,46 @@
+.text_box {
+  background-color: rgb(83, 97, 116);
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  margin-top: 20px;
+  padding: 20px 5px;
+
+  .question {
+    margin-left: 10px;
+    color: white;
+  }
+  
+  .answer {
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
+
+    li {
+      border: 2px solid white;
+      border-radius: 10px;
+      margin: 5px;
+
+      button {
+        color: white;
+        padding: 5px 10px;
+      }
+    }
+  }
+}
+
+.bt_box {
+  text-align: center;
+  margin-top: 20px;
+
+  .prev {
+    border: 1px solid rgb(84, 128, 194);
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: all .3s;
+  
+    &:hover {
+      background-color: rgb(84, 128, 194);
+      color: white;
+    }
+  }
+}
