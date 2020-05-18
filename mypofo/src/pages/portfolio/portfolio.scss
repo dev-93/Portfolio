@@ -1,38 +1,52 @@
-.portfolio {
+.wrap_portfolio {
   width: 100%;
   box-sizing: border-box;
   padding: 0 80px;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 50px);
   overflow-y: auto;
-  
-  &::-webkit-scrollbar {
-    width: 0 !important ;
-  }
+  display: flex;
 
-  ul {
-    width: 100%;
-    margin-top: 180px;
+  .cont {
     display: flex;
-    flex-wrap: wrap;
+    border: 1px solid green;
+    box-sizing: border-box;
 
-    li {
-      width: 20%;
-      height: 390px;
+    .explanation {
+      width: 40%;
       background-color: pink;
-      margin-right: 6.666%;
-      margin-bottom: 6.666%;
+      display: flex;
+      justify-content: center;
+    }
 
-      &:nth-child(1), &:nth-child(3) {
-        margin-top: 0;
-      }
-    
-      &:nth-child(4n+1), &:nth-child(4n+3) {
-          margin-top: -6.6666%;
-      }
+    .explanation .container {
+      align-self: center;
+      max-width: 90%;
+      background-color: white;
+      height:300px;
+    }
 
-      &:nth-child(4n+4) {
-        margin-right: 0;
-      }
+    .explanation .container .title {
+      font-size: 30px;
+    }
+
+    .explanation .container .skills {
+      margin-top: 40px;
+      font-size: 23px;
+    }
+
+    .picture {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .picture figure {
+      align-self: center;
+      text-align: center;
+    }
+
+    .picture figure img {
+      width: 80%;
     }
   }
 }
