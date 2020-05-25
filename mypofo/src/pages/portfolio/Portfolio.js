@@ -15,6 +15,7 @@ const Portfolio = () => {
       prevEl: '.swiper-button-prev',
     }
   }
+
   return (
     <>
       <div className="wrap_portfolio">
@@ -31,15 +32,14 @@ const Portfolio = () => {
                   </div>
                   
                   <div className="picture">
-                    <figure>
-                      <img src={list.imgUrl} alt={`${list.title} 이미지`} />
-                    </figure>
+                    <button type="button" onClick={()=>{window.open(`${list.imgUrl}`)}}>
+                      <img src={list.img} alt={`${list.title} 이미지`} />
+                    </button>
                   </div>
                 </div>
               )
             })
           }
-          
         </Swiper>
       </div>
     </>

@@ -20,7 +20,7 @@
       align-self: center;
       max-width: 90%;
       background-color: white;
-      height:300px;
+      height: 300px;
     }
 
     .explanation .container .title {
@@ -38,13 +38,14 @@
       justify-content: center;
     }
 
-    .picture figure {
+    .picture button {
       align-self: center;
       text-align: center;
+      width: 80%;
     }
 
-    .picture figure img {
-      width: 80%;
+    .picture button img {
+      width: 100%;
     }
   }
 }
