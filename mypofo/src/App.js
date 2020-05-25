@@ -38,7 +38,7 @@ function App() {
       <div>
         {
           isUpload && (
-            <Nav 
+            <Nav
               about={about}
               port={port}
               think={think}
