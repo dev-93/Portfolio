@@ -26,8 +26,11 @@ const Portfolio = () => {
                 <div className="cont" key={index}>
                   <div className="explanation">
                     <div className="container">
-                      <div className="title">{list.title}</div>
-                      <div className="skills">{list.skills}</div>
+                      <div className="title">Title: {list.title}</div>
+                      <div className="skills">Skills: {list.skills}</div>
+                      {
+                        list.pages && <div className="pages">Page: {list.pages}</div>
+                      }
                     </div>
                   </div>
                   

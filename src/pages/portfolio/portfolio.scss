@@ -25,11 +25,17 @@
 
     .explanation .container .title {
       font-size: 30px;
+      font-weight: 600;
     }
 
     .explanation .container .skills {
       margin-top: 150px;
-      font-size: 23px;
+      font-size: 18px;
+    }
+
+    .explanation .container .pages {
+      margin-top: 20px;
+      font-size: 18px;
     }
 
     .picture {
@@ -48,6 +54,10 @@
       width: 100%;
     }
   }
+}
+
+.swiper-wrapper > div:nth-child(2) .picture button img{
+  width: 40%;
 }
 
 @media (max-width:768px) {
