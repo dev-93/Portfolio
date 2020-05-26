@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import About from "./pages/about/About";
 import Portfolio from "./pages/portfolio/Portfolio";
 import Timeline from "./pages/timeline/Timeline";
-import Nav from "./components/Nav";
+import Nav from "./components/nav/Nav";
 import Main from "./pages/main/Main";
 import './App.scss';
 
