@@ -1,0 +1,20 @@
+.pages>div:last-child {
+    height: 100vh;
+}
+
+.portfolio > h2 {
+    margin-top: 150px;
+}
+
+.pofo {
+    margin-top: 50px;
+}
+
+.pofo>li.fou {
+    top: 45%;
+}
+
+footer {
+	position: fixed;
+	bottom:0;
+}
