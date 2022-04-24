@@ -1,117 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<title>김태남의 포트폴리오</title>
-	<!-- 모바일에서 화면배율을 디바이스 크기 기준으로 설정 -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- CSS 불러오기 -->
-	<link rel="stylesheet" href="./publishing/css/common.css">
-	<link rel="stylesheet" href="./publishing/css/index.css">
-	<link rel="stylesheet" href="./publishing/css/newPortfolio.css">
-	<!-- 제이쿼리 불러오기 -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<!-- owl 캐러셀 불러오기 -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
-	<!-- 폰트어썸 불러오기 -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-</head>
-
-<body>
-	<div class="top-bar row">
-		<h1 class="cell"><a href="#" class="logo block">TN</a></h1>
-	</div>
-	<div class="pages">
-		<div class="portfolio con relative">
-			<h2>PORTFOLIO</h2>
-			<ul class="pofo row relative">
-				<li class="fir absolute">
-					<h3>Maserati</h3>
-					<div class="detail_box">
-						<p>Publishing 100%</p>
-						<p>Main page, sub pages(1,2,3)</p>
-						<a href="./publishing/Maserati/index.html" target="_blank">more</a>
-					</div>
-					<div class="img-box">
-						<img src="./publishing/images/maserati.jpg" alt="마세라티">
-					</div>
-				</li>
-				<li class="sec absolute">
-					<h3>풀무원</h3>
-					<div class="detail_box">
-						<p>Responsive web</p>
-						<p>Publishing 100%</p>
-						<p>Main page</p>
-						<a href="./publishing/Pulmuone/index.html#home" target="_blank">more</a>
-					</div>
-					<div class="img-box">
-						<img src="./publishing/images/pulmuone.jpg" alt="풀무원">
-					</div>
-				</li>
-				<li class="thi absolute">
-					<h3>오늘의집</h3>
-					<div class="detail_box">
-						<p>Responsive web</p>
-						<p>Publishing 100%</p>
-						<p>Main page, sub pages(1,2)</p>
-						<a href="./publishing/House/index.html" target="_blank">more</a>
-					</div>
-					<div class="img-box">
-						<img src="./publishing/images/ohouse.jpg" alt="오늘의 집">
-					</div>
-				</li>
-				<li class="fou absolute">
-					<h3>탐앤탐스</h3>
-					<div class="detail_box">
-						<p>Responsive web</p>
-						<p>Publishing 100%</p>
-						<p>Main page</p>
-						<a href="./publishing/TomToms/index.html" target="_blank">more</a>
-					</div>
-					<div class="img-box">
-						<img src="./publishing/images/tom&toms.jpg" alt="탐앤탐스">
-					</div>
-				</li>
-			</ul>
-			<ul class="pofo_2 relative">
-				<li class="fir_2 absolute">
-					<img src="./publishing/images/mase_2.jpg" alt="">
-					<a href="./publishing/Maserati/index.html" target="_blank">more</a>
-				</li>
-				<li class="sec_2 absolute">
-					<img src="./publishing/images/pul_2.jpg" alt="">
-					<a href="./publishing/Pulmuone/index.html#home" target="_blank">more</a>
-				</li>
-				<li class="thi_2 absolute">
-					<img src="./publishing/images/ohou_2.jpg" alt="">
-					<a href="./publishing/House/index.html" target="_blank">more</a>
-				</li>
-				<li class="fou_2 absolute">
-					<img src="./publishing/images/tom_2.jpg" alt="">
-					<a href="./publishing/TomToms/index.html" target="_blank">more</a>
-				</li>
-			</ul>
-			<div class="text-box absolute">
-				<p>*포트폴리오는 기존에 있는 사이트를 카피하여 구현하는 방식으로 제작하였습니다.</p>
-				<p>개인적인 작업물로 해당기업과는 관련 없습니다.</p>
-			</div>
-		</div>
-	</div>
-
-	<footer>
-		<div class="copy-box con">
-			<p>copyright &copy; 2022 by TAE NAM KIM. all rights reserved</p>
-			<p>이 사이트는 상업적 목적이 아닌 개인 포트폴리오 목적으로 제작되었습니다.</p>
-		</div>
-	</footer>
-
-	<script src="js/index.js"></script>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taenams</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="menu">
+        <div class="menu-left menu-item">
+          <span id="about" class="menu-link">about</span>
+          <span class="menu-link">contact</span>
+        </div>
+        <div class="menu-center menu-item">
+          <div class="brand-logo">Portfolio</div>
+        </div>
+      </nav>
+      <div class="images">
+        <div class="left img"></div>
+        <div class="right img"></div>
+      </div>
+      <div class="hero-image">
+        <div class="wrapper-img">
+          <div class="box"></div>
+          <div>
+            <img class="image" src="images/img-two.jpeg" />
+          </div>
+        </div>
+      </div>
+      <div class="header"><p class="title">bienvenue</p></div>
+      <div class="hero-container">
+        <div class="sidebar-text">011</div>
+        <div id="projects" class="projects">projects</div>
+        <div class="img-nav">
+          <div class="prev">prev</div>
+          <div class="next">next</div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>

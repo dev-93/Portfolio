@@ -23,6 +23,7 @@ nav {
   align-items: center;
   text-transform: uppercase;
   font-family: "Monument Extended";
+  z-index: 10;
 }
 
 .menu-item {
@@ -45,6 +46,7 @@ nav {
 
 .menu-link {
   padding: 0 30px;
+  cursor: pointer;
 }
 
 .hero-image {
@@ -121,7 +123,7 @@ p {
   transform: translate(-50%, -50%);
   color: red;
   font-family: "Voyage";
-  font-size: 300px;
+  font-size: 180px;
 }
 
 .title .letter {
