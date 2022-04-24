@@ -8,8 +8,9 @@ const about = document.querySelector("#about");
 const projects = document.querySelector("#projects");
 
 about.addEventListener("click", function () {
-  location.href =
-    "https://taenam.notion.site/Resume-2157e272e964476392fb8a99996e7c04";
+  window.open(
+    "https://taenam.notion.site/Resume-2157e272e964476392fb8a99996e7c04"
+  );
 });
 
 projects.addEventListener("click", function () {
